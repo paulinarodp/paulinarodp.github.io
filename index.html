@@ -1,212 +1,320 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#181820" />
+    <meta name="theme-color" content="#020a12" />
     <meta
       name="description"
-      content="Portfolio de Paulina Rodriguez Pina: finance, automation and AI transformation."
+      content="Portfolio of Paulina Rodriguez Pina: finance, process automation and applied AI."
     />
-    <title>Paulina Rodriguez Pina | Finance, Automation & AI</title>
+    <title>Paulina Rodriguez Pina | Finance · Process Automation · Applied AI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Source+Code+Pro:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="shell">
-      <aside class="sidebar" aria-label="Perfil">
-        <div class="profile-card">
-          <div class="avatar-wrap">
-            <img src="./assets/portrait.png" alt="Retrato de Paulina Rodriguez Pina" />
-          </div>
-          <p class="eyebrow">Finance · Automation · AI</p>
-          <h1>Paulina<br />Rodriguez Pina</h1>
-          <p class="role">Finance transformation builder</p>
+    <div class="portfolio-shell">
+      <aside class="profile-sidebar" aria-label="Profile">
+        <div class="portrait-ring">
+          <img src="./assets/portrait.png" alt="Portrait of Paulina Rodriguez Pina" />
         </div>
 
-        <div class="side-section">
-          <h2>Skills</h2>
-          <div class="skill"><span>Finance automation</span><b>95%</b><i style="--level: 95%"></i></div>
-          <div class="skill"><span>AI workflows</span><b>90%</b><i style="--level: 90%"></i></div>
-          <div class="skill"><span>Product strategy</span><b>88%</b><i style="--level: 88%"></i></div>
-          <div class="skill"><span>Data dashboards</span><b>84%</b><i style="--level: 84%"></i></div>
-          <div class="skill"><span>Enterprise UX</span><b>80%</b><i style="--level: 80%"></i></div>
+        <div class="identity">
+          <h1>Paulina<br />Rodriguez Piña</h1>
+          <p>Finance · Process Automation · Applied AI</p>
+          <span></span>
         </div>
 
-        <div class="side-section checks">
-          <p>Intelligent decision systems</p>
-          <p>Finance process redesign</p>
-          <p>RAG and governance prototypes</p>
-          <p>Executive dashboards</p>
+        <p class="profile-copy">
+          I combine a foundation in finance and accounting with experience in process redesign,
+          automation and applied AI to explore better ways of operating, deciding and creating value.
+        </p>
+
+        <div class="social-row" aria-label="Social links">
+          <a href="https://github.com/pau171112-netizen" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <span class="brand-mark">GH</span>
+          </a>
+          <a href="#contact" aria-label="LinkedIn">
+            <span class="brand-mark">in</span>
+          </a>
+          <a href="#contact" aria-label="Email">
+            <i data-lucide="mail"></i>
+          </a>
         </div>
 
-        <a class="download" href="https://github.com/pau171112-netizen" target="_blank" rel="noreferrer">
-          GitHub Profile <span>↗</span>
+        <a class="resume-button" href="https://github.com/pau171112-netizen" target="_blank" rel="noreferrer">
+          <i data-lucide="download"></i>
+          <span>Download Résumé</span>
         </a>
+
+        <div class="profile-facts">
+          <article>
+            <i data-lucide="map-pin"></i>
+            <div>
+              <strong>Based in Rome</strong>
+              <span>Open to international opportunities</span>
+            </div>
+          </article>
+          <article>
+            <i data-lucide="globe-2"></i>
+            <div>
+              <strong>Languages</strong>
+              <span>Spanish · English · Italian</span>
+            </div>
+          </article>
+          <article>
+            <i data-lucide="sparkles"></i>
+            <div>
+              <strong>Current focus</strong>
+              <span>Digital transformation · Applied AI · Process innovation</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="sidebar-flow" aria-hidden="true"></div>
       </aside>
 
-      <main class="main">
-        <nav class="topbar" aria-label="Navegación principal">
-          <a class="brand" href="#inicio" aria-label="Inicio">
-            <span>PR</span>
-            <strong>Paulina R. Pina</strong>
-          </a>
-          <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">☰</button>
-          <div id="nav-links" class="nav-links">
-            <a href="#inicio">Inicio</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#skills">Skills</a>
-            <a href="#contacto">Contacto</a>
+      <main class="workspace">
+        <nav class="main-nav" aria-label="Main navigation">
+          <div class="nav-links" id="nav-links">
+            <a class="active" href="#overview"><i data-lucide="home"></i>Overview</a>
+            <a href="#work"><i data-lucide="folder-kanban"></i>Selected Work</a>
+            <a href="#experience"><i data-lucide="square-plus"></i>Experience</a>
+            <a href="#education"><i data-lucide="graduation-cap"></i>Education</a>
+            <a href="#about"><i data-lucide="info"></i>About</a>
+            <a href="#resume"><i data-lucide="badge"></i>Resume</a>
+          </div>
+
+          <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+            <i data-lucide="menu"></i>
+          </button>
+
+          <div class="top-actions" aria-label="External links">
+            <a href="https://github.com/pau171112-netizen" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <span class="brand-mark">GH</span>
+            </a>
+            <a href="#contact" aria-label="LinkedIn"><span class="brand-mark">in</span></a>
+            <a href="#contact" aria-label="Email"><i data-lucide="mail"></i></a>
+            <button class="theme-toggle" aria-label="Change visual intensity"><i data-lucide="moon"></i></button>
+            <a class="connect-button" href="#contact">
+              Let's connect
+              <i data-lucide="arrow-up-right"></i>
+            </a>
           </div>
         </nav>
 
-        <section id="inicio" class="hero">
+        <section id="overview" class="hero-panel">
           <div class="hero-copy">
-            <p class="hero-kicker">Finance leader · Process innovator · AI enthusiast</p>
-            <h2>Transforming finance with automation and <span>AI.</span></h2>
+            <h2>Turning complex business processes into <em>clarity.</em></h2>
             <p>
-              Diseño herramientas inteligentes para convertir procesos financieros complejos
-              en decisiones claras, flujos automatizados y experiencias ejecutivas listas para demo.
+              I combine finance, process redesign, automation and applied AI to explore better
+              ways of operating, deciding and creating value.
             </p>
-            <div class="actions">
-              <a class="button primary" href="#proyectos">Explorar proyectos</a>
-              <a class="button secondary" href="https://github.com/pau171112-netizen?tab=repositories" target="_blank" rel="noreferrer">Ver repositorios</a>
-            </div>
           </div>
-
-          <div class="hero-visual" aria-hidden="true">
-            <div class="signal-field">
-              <span>Data</span>
-              <span>Automation</span>
-              <span>Insight</span>
-              <span>Decision</span>
-              <i></i><i></i><i></i><i></i><i></i>
-            </div>
-            <img src="./assets/portrait.png" alt="" />
+          <div class="data-stream" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
           </div>
         </section>
 
-        <section class="metrics" aria-label="Resumen profesional">
-          <article><strong>5</strong><span>Portfolio demos</span></article>
-          <article><strong>AI</strong><span>Workflow design</span></article>
-          <article><strong>BI</strong><span>Dashboards & insight</span></article>
-          <article><strong>Ops</strong><span>Process automation</span></article>
+        <section class="metric-panel" aria-label="Profile metrics">
+          <article>
+            <i data-lucide="briefcase-business"></i>
+            <strong>2+</strong>
+            <span>Years of Experience</span>
+          </article>
+          <article>
+            <i data-lucide="globe-2"></i>
+            <strong>3</strong>
+            <span>Countries<br />MX · DE · IT</span>
+          </article>
+          <article>
+            <i data-lucide="message-square-more"></i>
+            <strong>3</strong>
+            <span>Languages<br />ES · EN · IT</span>
+          </article>
+          <article>
+            <i data-lucide="trophy"></i>
+            <strong>Top 1%</strong>
+            <span>CENEVAL<br />National Award</span>
+          </article>
         </section>
 
-        <section id="proyectos" class="section">
-          <div class="section-head">
-            <p class="eyebrow">Featured case studies</p>
-            <h2>Proyectos destacados</h2>
+        <section id="work" class="work-section">
+          <div class="section-title">
+            <i data-lucide="folder"></i>
+            <h2>Selected Work</h2>
           </div>
 
-          <div class="project-grid">
-            <article class="project-card featured">
-              <div>
-                <p class="tag">Architecture AI</p>
-                <h3>Forma AI</h3>
-                <p>Workspace para pasar de sketches e intención arquitectónica a direcciones visuales y storytelling para cliente.</p>
-              </div>
-              <div class="project-links">
-                <a href="https://forma-ai-local.vercel.app" target="_blank" rel="noreferrer">Demo</a>
-                <a href="https://github.com/pau171112-netizen/Forma-AI" target="_blank" rel="noreferrer">Repo</a>
+          <div class="work-grid">
+            <article class="work-card featured-card">
+              <img src="./assets/factorymind.png" alt="FactoryMind CocoaRisk interface preview" />
+              <div class="work-body">
+                <p class="label">Featured Project</p>
+                <h3>FactoryMind / CocoaRisk</h3>
+                <p class="subtitle">Enterprise AI · Decision Intelligence</p>
+                <p>
+                  AI-powered risk and decision system that connects operational, financial and ESG
+                  data to enable smarter decisions, stronger controls and enterprise value.
+                </p>
+                <div class="tag-row">
+                  <span>Decision Intelligence</span>
+                  <span>Risk Modeling</span>
+                  <span>AI Governance</span>
+                </div>
+                <div class="card-actions">
+                  <a href="https://factorymind-artifact.vercel.app" target="_blank" rel="noreferrer">
+                    Live Demo <i data-lucide="arrow-up-right"></i>
+                  </a>
+                  <a href="https://github.com/pau171112-netizen/FactoryMind-artifact" target="_blank" rel="noreferrer">
+                    <i data-lucide="code-2"></i> GitHub Repo
+                  </a>
+                </div>
               </div>
             </article>
 
-            <article class="project-card">
-              <p class="tag">Manufacturing risk</p>
-              <h3>FactoryMind · CocoaRisk</h3>
-              <p>Risk cockpit con EVaR, escenarios y paquetes de decisión gobernados para operaciones industriales.</p>
-              <div class="mini-chart bars"><span></span><span></span><span></span><span></span></div>
-              <div class="project-links">
-                <a href="https://factorymind-artifact.vercel.app" target="_blank" rel="noreferrer">Demo</a>
-                <a href="https://github.com/pau171112-netizen/FactoryMind-artifact" target="_blank" rel="noreferrer">Repo</a>
+            <article class="work-card small-card">
+              <img src="./assets/forma-ai.png" alt="Forma AI architecture preview" />
+              <h3>Forma AI</h3>
+              <p class="subtitle">AI Project · Design Construction</p>
+              <div class="tag-row"><span>AI Project</span><span>Design</span></div>
+              <div class="card-actions">
+                <a href="https://forma-ai-local.vercel.app" target="_blank" rel="noreferrer">Live Demo <i data-lucide="arrow-up-right"></i></a>
+                <a href="https://github.com/pau171112-netizen/Forma-AI" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> Repo</a>
               </div>
             </article>
 
-            <article class="project-card">
-              <p class="tag">Sustainability intelligence</p>
+            <article class="work-card small-card">
+              <div class="synthetic-thumb eco-thumb" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
               <h3>EcoProfit AI</h3>
-              <p>MVP para conectar datos operativos con emisiones, oportunidades de ahorro y recomendaciones accionables.</p>
-              <div class="mini-chart ring"></div>
-              <div class="project-links">
-                <a href="https://ecoprofit-ai.vercel.app" target="_blank" rel="noreferrer">Demo</a>
-                <a href="https://github.com/pau171112-netizen/Ecoprofit-AI" target="_blank" rel="noreferrer">Repo</a>
+              <p class="subtitle">Sustainability Intelligence · ESG</p>
+              <div class="tag-row"><span>Sustainability</span><span>ESG</span></div>
+              <div class="card-actions">
+                <a href="https://ecoprofit-ai.vercel.app" target="_blank" rel="noreferrer">Live Demo <i data-lucide="arrow-up-right"></i></a>
+                <a href="https://github.com/pau171112-netizen/Ecoprofit-AI" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> Repo</a>
               </div>
             </article>
 
-            <article class="project-card">
-              <p class="tag">Enterprise HR AI</p>
+            <article class="work-card small-card">
+              <img src="./assets/genbot.png" alt="GenBot HR Assistant preview" />
               <h3>GenBot HR Assistant</h3>
-              <p>Asistente HR con RAG, respuestas citadas, escalación segura y consola de gobernanza para equipos internos.</p>
-              <div class="mini-chart line"></div>
-              <div class="project-links">
-                <a href="https://generali-hr-chatbot.vercel.app" target="_blank" rel="noreferrer">Demo</a>
-                <a href="https://github.com/pau171112-netizen/GenBot-HR-Assistant" target="_blank" rel="noreferrer">Repo</a>
+              <p class="subtitle">Conversational AI · Employee Experience</p>
+              <div class="tag-row"><span>HR Tech</span><span>Chatbot</span></div>
+              <div class="card-actions">
+                <a href="https://generali-hr-chatbot.vercel.app" target="_blank" rel="noreferrer">Live Demo <i data-lucide="arrow-up-right"></i></a>
+                <a href="https://github.com/pau171112-netizen/GenBot-HR-Assistant" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> Repo</a>
               </div>
             </article>
 
-            <article class="project-card">
-              <p class="tag">Financial services</p>
+            <article class="work-card small-card">
+              <div class="synthetic-thumb graph-thumb" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
               <h3>LifeGraph AI</h3>
-              <p>Customer intelligence con relationship graph, life events y recomendaciones next-best-action para advisors.</p>
-              <div class="mini-chart network"><i></i><i></i><i></i><i></i></div>
-              <div class="project-links">
-                <a href="https://lifegraph-poste-demo.vercel.app" target="_blank" rel="noreferrer">Demo</a>
-                <a href="https://github.com/pau171112-netizen/LifeGraph-AI" target="_blank" rel="noreferrer">Repo</a>
+              <p class="subtitle">Customer Intelligence · Personalization</p>
+              <div class="tag-row"><span>Customer Intelligence</span><span>Personalization</span></div>
+              <div class="card-actions">
+                <a href="https://lifegraph-poste-demo.vercel.app" target="_blank" rel="noreferrer">Live Demo <i data-lucide="arrow-up-right"></i></a>
+                <a href="https://github.com/pau171112-netizen/LifeGraph-AI" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> Repo</a>
               </div>
             </article>
           </div>
         </section>
 
-        <section id="skills" class="section split">
-          <div class="panel">
-            <p class="eyebrow">My skills</p>
-            <h2>Sistemas, automatización y decisiones</h2>
-            <p>
-              Mi foco está en construir experiencias que traduzcan datos, reglas de negocio y señales de IA en flujos que los equipos puedan usar.
-            </p>
-            <div class="cards-3">
-              <article>
-                <h3>Finance Automation</h3>
-                <p>Cierre, reporting, controles, dashboards y procesos repetibles.</p>
-              </article>
-              <article>
-                <h3>AI Product Thinking</h3>
-                <p>Prototipos con RAG, LLM routing, feedback loops y guardrails.</p>
-              </article>
-              <article>
-                <h3>Executive UX</h3>
-                <p>Interfaces para explicar riesgos, decisiones y oportunidades con claridad.</p>
-              </article>
-            </div>
+        <section id="experience" class="focus-section">
+          <div class="section-title">
+            <i data-lucide="target"></i>
+            <h2>Core Skills &amp; Focus</h2>
           </div>
 
-          <aside class="panel stack-panel">
-            <h2>Tech stack & tools</h2>
-            <div class="chips">
-              <span>Python</span><span>TypeScript</span><span>React</span><span>Next.js</span>
-              <span>Vercel</span><span>OpenAI API</span><span>SQL</span><span>Power BI</span>
-              <span>Recharts</span><span>Prisma</span><span>Tailwind</span><span>GitHub</span>
-            </div>
-          </aside>
-        </section>
-
-        <section id="contacto" class="quote-panel">
-          <blockquote>Good data tells you what happened. Great processes tell you what is next.</blockquote>
-          <a href="https://github.com/pau171112-netizen" target="_blank" rel="noreferrer">Conectar en GitHub</a>
+          <div class="focus-grid">
+            <article>
+              <i data-lucide="pie-chart"></i>
+              <div>
+                <h3>Finance &amp; Business Understanding</h3>
+                <p>Financial analysis, accounting operations and strategic business insight.</p>
+              </div>
+            </article>
+            <article>
+              <i data-lucide="workflow"></i>
+              <div>
+                <h3>Process Transformation</h3>
+                <p>Process mapping, redesign and automation to drive efficiency and quality.</p>
+              </div>
+            </article>
+            <article>
+              <i data-lucide="brain-circuit"></i>
+              <div>
+                <h3>Applied AI &amp; Data</h3>
+                <p>AI tools, data analysis and modeling for intelligent decision support.</p>
+              </div>
+            </article>
+            <article>
+              <i data-lucide="users-round"></i>
+              <div>
+                <h3>Project Coordination</h3>
+                <p>Cross-functional collaboration, stakeholder alignment and project delivery.</p>
+              </div>
+            </article>
+          </div>
         </section>
       </main>
 
-      <aside class="rail" aria-label="Accesos rápidos">
-        <button class="theme-toggle" aria-label="Cambiar intensidad visual">☼</button>
-        <a href="#inicio">Inicio</a>
-        <a href="#proyectos">Work</a>
-        <a href="#skills">Skills</a>
+      <aside class="right-column" aria-label="Profile details">
+        <section class="side-panel" id="about">
+          <h2><i data-lucide="star"></i>Profile Highlights</h2>
+          <div class="highlight-group">
+            <h3><i data-lucide="user-round"></i>Experience</h3>
+            <ul>
+              <li>2+ years in finance and accounting operations</li>
+              <li>Experience in process redesign and automation</li>
+            </ul>
+          </div>
+          <div class="highlight-group" id="education">
+            <h3><i data-lucide="graduation-cap"></i>Education</h3>
+            <ul>
+              <li>Master in Digital Transformation at LUISS</li>
+              <li>B.A. in Accounting &amp; Finance, Tecnológico de Monterrey</li>
+            </ul>
+          </div>
+          <div class="highlight-group">
+            <h3><i data-lucide="trophy"></i>Recognition</h3>
+            <ul>
+              <li>CENEVAL National Award — Top 1%</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="side-panel" id="resume">
+          <h2><i data-lucide="settings"></i>Tools &amp; Technologies</h2>
+          <div class="tool-grid">
+            <span>Python</span><span>R</span><span>SQL</span>
+            <span>Power BI</span><span>Excel</span><span>SAP</span>
+            <span>Oracle</span><span>Machine Learning</span><span>NLP</span>
+            <span>Generative AI</span><span>Automation</span>
+          </div>
+        </section>
+
+        <section class="side-panel contact-panel" id="contact">
+          <h2>Let's connect</h2>
+          <div class="contact-grid">
+            <a href="https://github.com/pau171112-netizen" target="_blank" rel="noreferrer">
+              <span class="brand-mark large">GH</span><span>GitHub</span>
+            </a>
+            <a href="#contact"><span class="brand-mark large">in</span><span>LinkedIn</span></a>
+            <a href="#contact"><i data-lucide="mail"></i><span>Email</span></a>
+            <a class="mini-resume" href="https://github.com/pau171112-netizen" target="_blank" rel="noreferrer">
+              <i data-lucide="download"></i><span>Download CV</span>
+            </a>
+          </div>
+        </section>
       </aside>
     </div>
 
