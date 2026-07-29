@@ -739,6 +739,27 @@ p {
   height: 18px;
 }
 
+.private-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  min-height: 38px;
+  margin-top: auto;
+  padding: 0 12px;
+  border: 1px solid rgba(208, 144, 76, 0.46);
+  border-radius: 5px;
+  background: rgba(208, 144, 76, 0.06);
+  color: var(--orange);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.private-note svg {
+  width: 16px;
+  height: 16px;
+}
+
 .focus-section {
   margin-top: 28px;
 }
