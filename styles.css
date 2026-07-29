@@ -492,7 +492,8 @@ p {
 .data-stream span:nth-child(6) { right: 11%; bottom: 26%; }
 
 .work-section,
-.focus-section {
+.focus-section,
+.resume-section {
   padding: 0 22px;
 }
 
@@ -745,6 +746,38 @@ p {
 .resume-section {
   margin-top: 32px;
   scroll-margin-top: 92px;
+}
+
+.resume-section[hidden] {
+  display: none;
+}
+
+.resume-title {
+  grid-template-columns: auto auto 1fr auto;
+}
+
+.resume-title::after {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.resume-close {
+  grid-column: 4;
+  grid-row: 1;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(208, 144, 76, 0.42);
+  border-radius: 5px;
+  background: rgba(8, 21, 34, 0.86);
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.resume-close svg {
+  width: 18px;
+  height: 18px;
 }
 
 .resume-viewer {
@@ -1117,7 +1150,7 @@ p {
   }
 
   .resume-section {
-    margin: 30px 22px 0;
+    margin: 30px 0 0;
   }
 
   .resume-viewer {
