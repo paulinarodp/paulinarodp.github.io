@@ -229,31 +229,34 @@ p {
 
 .profile-facts {
   display: grid;
-  gap: 24px;
+  gap: 26px;
 }
 
 .profile-facts article {
   display: grid;
-  grid-template-columns: 44px 1fr;
-  gap: 16px;
-  align-items: start;
+  grid-template-columns: 46px 1fr;
+  gap: 18px;
+  align-items: center;
   color: var(--muted);
 }
 
 .icon-frame {
-  display: grid;
-  place-items: center;
-  width: 38px;
-  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   border: 1px solid rgba(208, 144, 76, 0.34);
   border-radius: 5px;
   background: rgba(7, 20, 33, 0.74);
   box-shadow: inset 0 0 18px rgba(208, 144, 76, 0.045);
+  line-height: 0;
 }
 
 .icon-frame svg {
-  width: 24px;
-  height: 24px;
+  display: block;
+  width: 25px;
+  height: 25px;
   color: var(--orange);
 }
 
@@ -264,24 +267,25 @@ p {
   font-size: 0.94rem;
 }
 
-.profile-facts span {
+.profile-facts article > div > span {
   display: block;
   font-size: 0.86rem;
   line-height: 1.45;
 }
 
 .sidebar-flow {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 250px;
-  opacity: 0.68;
+  position: relative;
+  width: calc(100% + 72px);
+  height: 190px;
+  margin: 0 -36px -28px;
+  border-top: 30px solid transparent;
+  opacity: 0.76;
   pointer-events: none;
   background:
-    linear-gradient(180deg, transparent, rgba(1, 9, 19, 0.38) 24%, rgba(1, 9, 19, 0.8)),
-    url("./assets/sidebar-flow.png?v=20260729-flow") center bottom / cover no-repeat;
-  mask-image: linear-gradient(180deg, transparent, #000 30%, #000);
+    linear-gradient(180deg, rgba(1, 9, 19, 0), rgba(1, 9, 19, 0.34) 32%, rgba(1, 9, 19, 0.74)),
+    url("./assets/sidebar-flow.png?v=20260729-flow") center center / cover no-repeat;
+  background-clip: padding-box;
+  mask-image: linear-gradient(180deg, transparent, #000 18%, #000 86%, transparent);
 }
 
 .workspace {
