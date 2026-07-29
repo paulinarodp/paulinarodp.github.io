@@ -75,6 +75,8 @@ p {
 }
 
 .profile-sidebar {
+  grid-column: 1;
+  grid-row: 1 / span 2;
   position: sticky;
   top: 0;
   height: 100vh;
@@ -303,11 +305,15 @@ p {
 }
 
 .workspace {
+  grid-column: 2;
+  grid-row: 2;
   min-width: 0;
   padding: 0 0 34px;
 }
 
 .main-nav {
+  grid-column: 2 / 4;
+  grid-row: 1;
   position: sticky;
   top: 0;
   z-index: 30;
@@ -760,14 +766,16 @@ p {
 }
 
 .right-column {
+  grid-column: 3;
+  grid-row: 2;
   position: sticky;
-  top: 0;
-  height: 100vh;
+  top: 88px;
+  height: calc(100vh - 88px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 18px;
-  padding-top: 86px;
+  padding-top: 0;
   padding-bottom: 24px;
   overflow: auto;
 }
@@ -886,6 +894,21 @@ p {
     padding-right: 0;
   }
 
+  .profile-sidebar {
+    grid-row: 1 / span 3;
+  }
+
+  .main-nav {
+    grid-column: 2;
+    grid-row: 1;
+    padding-right: 22px;
+  }
+
+  .workspace {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
   .hero-copy {
     width: min(72%, 760px);
   }
@@ -909,6 +932,7 @@ p {
   .right-column {
     position: static;
     grid-column: 2;
+    grid-row: 3;
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="./styles.css?v=20260729-tools-sidebar" />
+    <link rel="stylesheet" href="./styles.css?v=20260729-nav-span" />
   </head>
   <body>
     <div class="portfolio-shell">
@@ -90,27 +90,28 @@
         <div class="sidebar-flow" aria-hidden="true"></div>
       </aside>
 
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-links" id="nav-links">
+          <a class="active" href="#overview"><i data-lucide="home"></i>Overview</a>
+          <a href="#work"><i data-lucide="folder-kanban"></i>Selected Work</a>
+          <a href="#resume"><i data-lucide="badge"></i>Resume</a>
+        </div>
+
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+          <i data-lucide="menu"></i>
+        </button>
+
+        <div class="top-actions" aria-label="External links">
+          <a href="https://github.com/paulinarodp" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <span class="brand-mark">GH</span>
+          </a>
+          <a href="#resume" aria-label="LinkedIn"><span class="brand-mark">in</span></a>
+          <a href="#resume" aria-label="Email"><i data-lucide="mail"></i></a>
+          <button class="theme-toggle" aria-label="Change visual intensity"><i data-lucide="moon"></i></button>
+        </div>
+      </nav>
+
       <main class="workspace">
-        <nav class="main-nav" aria-label="Main navigation">
-          <div class="nav-links" id="nav-links">
-            <a class="active" href="#overview"><i data-lucide="home"></i>Overview</a>
-            <a href="#work"><i data-lucide="folder-kanban"></i>Selected Work</a>
-            <a href="#resume"><i data-lucide="badge"></i>Resume</a>
-          </div>
-
-          <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
-            <i data-lucide="menu"></i>
-          </button>
-
-          <div class="top-actions" aria-label="External links">
-            <a href="https://github.com/paulinarodp" target="_blank" rel="noreferrer" aria-label="GitHub">
-              <span class="brand-mark">GH</span>
-            </a>
-            <a href="#resume" aria-label="LinkedIn"><span class="brand-mark">in</span></a>
-            <a href="#resume" aria-label="Email"><i data-lucide="mail"></i></a>
-            <button class="theme-toggle" aria-label="Change visual intensity"><i data-lucide="moon"></i></button>
-          </div>
-        </nav>
 
         <section id="overview" class="hero-panel">
           <div class="hero-copy">
@@ -134,7 +135,7 @@
           <div class="work-grid">
             <article class="work-card featured-project">
               <div class="card-media">
-                <img src="./assets/factorymind.png" alt="FactoryMind CocoaRisk interface preview" />
+                <img src="./assets/factorymind.png?v=20260729-cube" alt="FactoryMind CocoaRisk interface preview" />
               </div>
               <div class="card-content">
                 <span class="project-kicker">Featured Project</span>
