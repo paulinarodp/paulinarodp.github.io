@@ -742,6 +742,60 @@ p {
   margin-top: 28px;
 }
 
+.resume-section {
+  margin-top: 32px;
+  scroll-margin-top: 92px;
+}
+
+.resume-viewer {
+  height: min(78vh, 920px);
+  min-height: 620px;
+  overflow: hidden;
+  border: 1px solid rgba(208, 144, 76, 0.46);
+  border-radius: 8px;
+  background: rgba(4, 17, 29, 0.86);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+}
+
+.resume-viewer iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #0a1724;
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.resume-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--orange);
+  border-radius: 5px;
+  background: rgba(208, 144, 76, 0.045);
+  color: var(--orange);
+  font-weight: 700;
+}
+
+.resume-actions a + a {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--ink);
+}
+
+.resume-actions svg {
+  width: 18px;
+  height: 18px;
+}
+
 .focus-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -1060,6 +1114,15 @@ p {
 
   .work-card {
     border-radius: 18px;
+  }
+
+  .resume-section {
+    margin: 30px 22px 0;
+  }
+
+  .resume-viewer {
+    height: 72vh;
+    min-height: 520px;
   }
 
   .right-column {
