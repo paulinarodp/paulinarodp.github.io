@@ -248,15 +248,27 @@ p {
 
 .profile-facts article {
   display: grid;
-  grid-template-columns: 32px 1fr;
-  gap: 15px;
+  grid-template-columns: 44px 1fr;
+  gap: 16px;
+  align-items: start;
   color: var(--muted);
 }
 
-.profile-facts svg {
+.icon-frame {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(208, 144, 76, 0.34);
+  border-radius: 5px;
+  background: rgba(7, 20, 33, 0.74);
+  box-shadow: inset 0 0 18px rgba(208, 144, 76, 0.045);
+}
+
+.icon-frame svg {
+  width: 24px;
+  height: 24px;
   color: var(--orange);
-  width: 28px;
-  height: 28px;
 }
 
 .profile-facts strong {
@@ -274,18 +286,16 @@ p {
 
 .sidebar-flow {
   position: absolute;
-  left: -25%;
-  right: -8%;
-  bottom: -42px;
-  height: 230px;
-  opacity: 0.64;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 250px;
+  opacity: 0.68;
   pointer-events: none;
   background:
-    radial-gradient(circle at 72% 50%, rgba(208, 144, 76, 0.9) 0 2px, transparent 3px),
-    radial-gradient(circle at 58% 34%, rgba(208, 144, 76, 0.7) 0 2px, transparent 3px),
-    radial-gradient(circle at 46% 72%, rgba(208, 144, 76, 0.7) 0 2px, transparent 3px),
-    repeating-radial-gradient(ellipse at 72% 52%, transparent 0 18px, rgba(208, 144, 76, 0.24) 19px 20px, transparent 21px 36px);
-  transform: rotate(-8deg);
+    linear-gradient(180deg, transparent, rgba(1, 9, 19, 0.38) 24%, rgba(1, 9, 19, 0.8)),
+    url("./assets/sidebar-flow.png?v=20260729-flow") center bottom / cover no-repeat;
+  mask-image: linear-gradient(180deg, transparent, #000 30%, #000);
 }
 
 .workspace {
@@ -387,7 +397,8 @@ p {
   margin-top: 28px;
   overflow: hidden;
   background:
-    radial-gradient(circle at 88% 54%, rgba(208, 144, 76, 0.18), transparent 18%),
+    linear-gradient(90deg, rgba(1, 9, 19, 0.98) 0 34%, rgba(1, 9, 19, 0.68) 54%, rgba(1, 9, 19, 0.12)),
+    url("./assets/hero-flow.png?v=20260729-flow") right center / auto 100% no-repeat,
     radial-gradient(circle at 78% 45%, rgba(22, 59, 91, 0.62), transparent 34%);
 }
 
@@ -423,6 +434,7 @@ p {
   position: absolute;
   inset: 0;
   pointer-events: none;
+  display: none;
 }
 
 .data-stream::before {
