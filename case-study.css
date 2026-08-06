@@ -973,3 +973,353 @@ blockquote p {
     bottom: 16px;
   }
 }
+
+/* ============================================================
+   PER-PROJECT THEMES
+   Each case study sets a theme class on <body>; only the accent
+   and hero gradient change, so the layout stays one system.
+   ============================================================ */
+
+body.theme-poste {
+  --cs-gold: #f2b705;
+  --cs-gold-soft: rgba(242, 183, 5, 0.16);
+  --cs-navy: #0a2472;
+  --cs-navy-soft: #123a8c;
+}
+
+body.theme-forma {
+  --cs-gold: #b08d57;
+  --cs-gold-soft: rgba(176, 141, 87, 0.15);
+  --cs-navy: #1c1a17;
+  --cs-navy-soft: #2c2823;
+  --cs-bg: #faf7f2;
+}
+
+body.theme-genbot {
+  --cs-gold: #c8102e;
+  --cs-gold-soft: rgba(200, 16, 46, 0.1);
+  --cs-navy: #0e1a2b;
+  --cs-navy-soft: #17263c;
+  --cs-bg: #f8f6f3;
+}
+
+body.theme-eco {
+  --cs-gold: #1f7a4d;
+  --cs-gold-soft: rgba(31, 122, 77, 0.12);
+  --cs-navy: #0d2b1e;
+  --cs-navy-soft: #143d2b;
+  --cs-bg: #f6f8f4;
+}
+
+/* Light hero variant (Forma AI / GenBot use a pale hero) */
+.cs-hero.cs-hero-light {
+  background:
+    radial-gradient(circle at 88% 12%, var(--cs-gold-soft), transparent 42%),
+    linear-gradient(160deg, #ffffff, var(--cs-bg));
+  color: var(--cs-ink);
+}
+
+.cs-hero-light .cs-subtitle {
+  color: var(--cs-muted);
+}
+
+.cs-hero-light .cs-hero-desc {
+  color: var(--cs-muted);
+}
+
+.cs-hero-light .cs-badge-outline {
+  border-color: var(--cs-line);
+  color: var(--cs-muted);
+}
+
+.cs-hero-light .cs-btn-outline {
+  border-color: var(--cs-line);
+  color: var(--cs-ink);
+}
+
+.cs-hero-light .cs-btn-outline:hover {
+  border-color: var(--cs-gold);
+  color: var(--cs-gold);
+}
+
+.cs-hero-light .cs-btn-dark {
+  background: var(--cs-navy);
+  color: #fff;
+}
+
+.cs-hero-light .cs-btn-dark:hover {
+  filter: brightness(1.15);
+}
+
+/* Hero brand chip (e.g. Poste Italiane lockup) */
+.cs-brand-chip {
+  display: inline-block;
+  margin: 4px 0 18px;
+  padding: 7px 14px;
+  border-radius: 5px;
+  background: var(--cs-gold);
+  color: #0a2472;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+/* Hero stat strip (GenBot-style inline metrics) */
+.cs-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  margin: 0 0 26px;
+}
+
+.cs-hero-stats article {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cs-hero-stats i {
+  width: 19px;
+  height: 19px;
+  color: var(--cs-gold);
+  flex: none;
+  margin-top: 3px;
+}
+
+.cs-hero-stats strong {
+  display: block;
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--cs-gold);
+  line-height: 1.15;
+}
+
+.cs-hero-stats span {
+  display: block;
+  font-size: 0.74rem;
+  line-height: 1.35;
+  opacity: 0.75;
+}
+
+/* Hero side panel cards (GenBot capability list) */
+.cs-hero-cards {
+  display: grid;
+  gap: 12px;
+  align-content: start;
+}
+
+.cs-hero-cards article {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--cs-panel);
+  border: 1px solid var(--cs-line);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(11, 21, 38, 0.05);
+}
+
+.cs-hero-cards i {
+  width: 19px;
+  height: 19px;
+  color: var(--cs-gold);
+  flex: none;
+  margin-top: 2px;
+}
+
+.cs-hero-cards strong {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  color: var(--cs-ink);
+}
+
+.cs-hero-cards span {
+  font-size: 0.78rem;
+  color: var(--cs-muted);
+  line-height: 1.45;
+}
+
+/* Impact stats band under the solution flow */
+.cs-stats-band {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 18px;
+  background: var(--cs-gold-soft);
+  border: 1px solid var(--cs-line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cs-stats-band article {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 16px;
+  border-left: 1px solid var(--cs-line);
+}
+
+.cs-stats-band article:first-child {
+  border-left: none;
+}
+
+.cs-stats-band i {
+  width: 22px;
+  height: 22px;
+  color: var(--cs-gold);
+  flex: none;
+}
+
+.cs-stats-band strong {
+  display: block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--cs-ink);
+}
+
+.cs-stats-band span {
+  display: block;
+  font-size: 0.74rem;
+  color: var(--cs-muted);
+  line-height: 1.35;
+  margin-top: 2px;
+}
+
+/* Pull-quote card (EcoProfit dark quote block) */
+.cs-quote-card {
+  padding: 26px 24px;
+  background: var(--cs-navy);
+  border-radius: 12px;
+  color: #f3efe8;
+}
+
+.cs-quote-card i {
+  width: 20px;
+  height: 20px;
+  color: var(--cs-gold);
+  margin-bottom: 12px;
+}
+
+.cs-quote-card p {
+  margin: 0 0 18px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.42rem;
+  line-height: 1.35;
+}
+
+.cs-quote-card footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  padding-top: 12px;
+}
+
+.cs-quote-card strong {
+  display: block;
+  font-size: 0.84rem;
+  color: var(--cs-gold);
+}
+
+.cs-quote-card small {
+  font-size: 0.76rem;
+  opacity: 0.7;
+}
+
+/* Architecture diagram image (GenBot / EcoProfit use a full-width slide) */
+.cs-diagram {
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--cs-line);
+  box-shadow: var(--cs-shadow);
+  background: var(--cs-panel);
+}
+
+.cs-diagram img {
+  width: 100%;
+}
+
+.cs-diagram figcaption {
+  padding: 14px 18px;
+  font-size: 0.8rem;
+  color: var(--cs-muted);
+  line-height: 1.5;
+  border-top: 1px solid var(--cs-line);
+}
+
+/* Full-width section (single column, no split) */
+.cs-full h2 {
+  margin-bottom: 20px;
+}
+
+/* Key components bullet list */
+.cs-key-list {
+  list-style: none;
+  margin: 14px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 9px;
+}
+
+.cs-key-list li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 0.84rem;
+  color: var(--cs-muted);
+  line-height: 1.5;
+}
+
+.cs-key-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--cs-gold);
+}
+
+/* Gallery variant: 5 items in a row */
+.cs-gallery-grid.cs-gallery-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: 1080px) {
+  .cs-stats-band {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cs-stats-band article:nth-child(3) {
+    border-left: none;
+  }
+
+  .cs-gallery-grid.cs-gallery-5 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 760px) {
+  .cs-stats-band {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-stats-band article {
+    border-left: none;
+    border-top: 1px solid var(--cs-line);
+  }
+
+  .cs-stats-band article:first-child {
+    border-top: none;
+  }
+
+  .cs-hero-stats {
+    gap: 18px;
+  }
+
+  .cs-gallery-grid.cs-gallery-5 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8f6f3" />
+    <meta
+      name="description"
+      content="Case study: GenBot, assistente HR basato su IA che combina RAG e conoscenza aziendale ufficiale per risposte accurate e immediate."
+      data-i18n-meta="metaDescription"
+    />
+    <title data-i18n-title="pageTitle">GenBot HR Assistant | Case Study — Paulina Rodriguez Pina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./case-study.css?v=20260806b" />
+  </head>
+  <body class="theme-genbot">
+    <nav class="cs-nav">
+      <a class="cs-logo" href="./index.html#overview">
+        <span class="cs-logo-mark">PR</span>
+        <span class="cs-logo-name">Paulina Rodríguez</span>
+      </a>
+      <div class="cs-nav-links">
+        <a href="./index.html#overview" data-i18n="navAbout">About</a>
+        <a href="./index.html#work" class="active" data-i18n="navWork">Work</a>
+        <a href="./index.html#experience" data-i18n="navSkills">Skills</a>
+        <a href="./index.html#resume-cv" data-i18n="navResume">Curriculum</a>
+        <a href="mailto:paulinarodp20@gmail.com" data-i18n="navContact">Contatti</a>
+      </div>
+      <a class="cs-back" href="./index.html#work">
+        <i data-lucide="arrow-left"></i> <span data-i18n="backToWork">Torna ai progetti</span>
+      </a>
+    </nav>
+
+    <header class="cs-hero cs-hero-light">
+      <div class="cs-hero-copy">
+        <div class="cs-badges">
+          <span class="cs-badge cs-badge-outline" data-i18n="teamBadge">PROGETTO DI GRUPPO</span>
+          <span class="cs-badge cs-badge-outline">GENERALI ASSET MANAGEMENT</span>
+        </div>
+        <h1>Gen<em>Bot</em></h1>
+        <p class="cs-eyebrow" data-i18n="heroKicker">ASSISTENTE HR BASATO SU IA</p>
+        <p class="cs-subtitle" data-i18n="heroSubtitle">Supporto intelligente per una migliore esperienza HR</p>
+        <p class="cs-hero-desc" data-i18n="heroDesc">
+          GenBot automatizza le richieste HR ripetitive, fornisce risposte accurate da fonti
+          ufficiali e offre supporto 24/7 a dipendenti e team HR.
+        </p>
+
+        <div class="cs-hero-stats">
+          <article>
+            <i data-lucide="trending-down"></i>
+            <div>
+              <strong>60–80%</strong>
+              <span data-i18n="heroStat1">Riduzione delle richieste ripetitive</span>
+            </div>
+          </article>
+          <article>
+            <i data-lucide="zap"></i>
+            <div>
+              <strong>24/7</strong>
+              <span data-i18n="heroStat2">Risposte immediate per i dipendenti</span>
+            </div>
+          </article>
+          <article>
+            <i data-lucide="smile"></i>
+            <div>
+              <strong data-i18n="heroStat3Value">Maggiore</strong>
+              <span data-i18n="heroStat3">Soddisfazione e fiducia dei dipendenti</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="cs-hero-actions">
+          <a class="cs-btn cs-btn-primary" href="./assets/genbot-final-presentation.pdf" target="_blank" rel="noreferrer">
+            <i data-lucide="presentation"></i> <span data-i18n="btnPresentation">Presentazione</span> <i data-lucide="arrow-up-right"></i>
+          </a>
+          <span class="cs-btn cs-btn-outline" aria-disabled="true">
+            <i data-lucide="lock-keyhole"></i> <span data-i18n="privateArchive">Archivio progetto privato</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="cs-hero-cards">
+        <article>
+          <i data-lucide="book-open"></i>
+          <div>
+            <strong data-i18n="cap1Title">HR KNOWLEDGE BASE</strong>
+            <span data-i18n="cap1Desc">Accesso centralizzato a policy, procedure e linee guida.</span>
+          </div>
+        </article>
+        <article>
+          <i data-lucide="user-round"></i>
+          <div>
+            <strong data-i18n="cap2Title">SUPPORTO AI DIPENDENTI</strong>
+            <span data-i18n="cap2Desc">Risposte immediate, accurate e consapevoli del contesto.</span>
+          </div>
+        </article>
+        <article>
+          <i data-lucide="file-text"></i>
+          <div>
+            <strong data-i18n="cap3Title">POLICY E PROCEDURE</strong>
+            <span data-i18n="cap3Desc">Informazioni aggiornate e affidabili da fonti ufficiali.</span>
+          </div>
+        </article>
+        <article>
+          <i data-lucide="shield-check"></i>
+          <div>
+            <strong data-i18n="cap4Title">SICURO E CONFORME</strong>
+            <span data-i18n="cap4Desc">Sicurezza e privacy di livello enterprise fin dalla progettazione.</span>
+          </div>
+        </article>
+      </div>
+    </header>
+
+    <section class="cs-meta">
+      <article>
+        <i data-lucide="users-round"></i>
+        <div>
+          <span class="cs-meta-label" data-i18n="metaRole">TIPO DI PROGETTO</span>
+          <span class="cs-meta-value" data-i18n="metaRoleValue">Progetto di gruppo</span>
+        </div>
+      </article>
+      <article>
+        <i data-lucide="calendar-days"></i>
+        <div>
+          <span class="cs-meta-label" data-i18n="metaDuration">DURATA</span>
+          <span class="cs-meta-value" data-i18n="metaDurationValue">4 settimane</span>
+        </div>
+      </article>
+      <article>
+        <i data-lucide="landmark"></i>
+        <div>
+          <span class="cs-meta-label" data-i18n="metaIndustry">SETTORE</span>
+          <span class="cs-meta-value" data-i18n="metaIndustryValue">Assicurazioni</span>
+        </div>
+      </article>
+      <article>
+        <i data-lucide="target"></i>
+        <div>
+          <span class="cs-meta-label" data-i18n="metaFocus">FOCUS</span>
+          <span class="cs-meta-value" data-i18n="metaFocusValue">IA Conversazionale · RAG · Automazione · Knowledge Management</span>
+        </div>
+      </article>
+      <article>
+        <i data-lucide="wrench"></i>
+        <div>
+          <span class="cs-meta-label" data-i18n="metaTools">TECNOLOGIE</span>
+          <span class="cs-meta-value">Claude · LLMs · RAG · React · TypeScript · Supabase</span>
+        </div>
+      </article>
+    </section>
+
+    <main class="cs-main">
+      <section class="cs-split">
+        <div class="cs-col">
+          <h2 data-i18n="challengeTitle">IL PROBLEMA</h2>
+          <p data-i18n="challengeDesc">
+            I team HR passano ore a rispondere ogni giorno alle stesse domande. Le informazioni sono
+            sparse tra sistemi e documenti diversi, rendendo difficile per i dipendenti ottenere
+            risposte rapide e coerenti.
+          </p>
+          <div class="cs-mini-cards">
+            <div class="cs-mini-card">
+              <i data-lucide="repeat"></i>
+              <div>
+                <strong data-i18n="challenge1Title">Richieste ripetitive</strong>
+                <span data-i18n="challenge1Desc">L'alto volume di domande ricorrenti consuma il tempo del team HR.</span>
+              </div>
+            </div>
+            <div class="cs-mini-card">
+              <i data-lucide="database"></i>
+              <div>
+                <strong data-i18n="challenge2Title">Informazioni frammentate</strong>
+                <span data-i18n="challenge2Desc">Policy e procedure sono archiviate in fonti scollegate tra loro.</span>
+              </div>
+            </div>
+            <div class="cs-mini-card">
+              <i data-lucide="user-x"></i>
+              <div>
+                <strong data-i18n="challenge3Title">Esperienza disconnessa</strong>
+                <span data-i18n="challenge3Desc">I dipendenti affrontano tempi di risposta lenti e risposte incoerenti.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cs-col">
+          <h2 data-i18n="solutionTitle">LA NOSTRA SOLUZIONE</h2>
+          <p data-i18n="solutionDesc">
+            GenBot è un assistente HR basato su IA che combina la Retrieval-Augmented Generation
+            (RAG) con la conoscenza aziendale ufficiale per fornire risposte accurate, sicure e
+            immediate.
+          </p>
+          <div class="cs-flow">
+            <div class="cs-flow-step">
+              <i data-lucide="message-square"></i>
+              <strong data-i18n="flow1">Domanda</strong>
+              <span data-i18n="flow1Desc">Il dipendente pone una domanda in linguaggio naturale.</span>
+            </div>
+            <i data-lucide="chevron-right" class="cs-flow-arrow"></i>
+            <div class="cs-flow-step">
+              <i data-lucide="database"></i>
+              <strong data-i18n="flow2">Recupero</strong>
+              <span data-i18n="flow2Desc">GenBot recupera le informazioni rilevanti dalle fonti HR.</span>
+            </div>
+            <i data-lucide="chevron-right" class="cs-flow-arrow"></i>
+            <div class="cs-flow-step">
+              <i data-lucide="sparkles"></i>
+              <strong data-i18n="flow3">Generazione</strong>
+              <span data-i18n="flow3Desc">L'IA genera una risposta accurata e consapevole del contesto.</span>
+            </div>
+            <i data-lucide="chevron-right" class="cs-flow-arrow"></i>
+            <div class="cs-flow-step">
+              <i data-lucide="check-circle-2"></i>
+              <strong data-i18n="flow4">Consegna</strong>
+              <span data-i18n="flow4Desc">La risposta arriva subito, con riferimenti alle fonti.</span>
+            </div>
+          </div>
+          <div class="cs-stats-band">
+            <article>
+              <i data-lucide="trending-down"></i>
+              <div>
+                <strong>60–80%</strong>
+                <span data-i18n="stat1">Riduzione dello sforzo manuale</span>
+              </div>
+            </article>
+            <article>
+              <i data-lucide="target"></i>
+              <div>
+                <strong>92%</strong>
+                <span data-i18n="stat2">Domande risolte automaticamente</span>
+              </div>
+            </article>
+            <article>
+              <i data-lucide="clock"></i>
+              <div>
+                <strong>24/7</strong>
+                <span data-i18n="stat3">Disponibilità per tutti i dipendenti</span>
+              </div>
+            </article>
+            <article>
+              <i data-lucide="smile"></i>
+              <div>
+                <strong>4.8/5</strong>
+                <span data-i18n="stat4">Soddisfazione dei dipendenti</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-split">
+        <div class="cs-col">
+          <h2 data-i18n="archTitle">PANORAMICA DELL'ARCHITETTURA</h2>
+          <p data-i18n="archDesc">
+            Un'architettura sicura e scalabile che collega i dipendenti a una conoscenza HR
+            affidabile attraverso recupero intelligente e IA.
+          </p>
+          <h3 style="font-size: 0.82rem; letter-spacing: 0.06em; color: var(--cs-gold); margin: 22px 0 0" data-i18n="keyComponents">COMPONENTI CHIAVE</h3>
+          <ul class="cs-key-list">
+            <li data-i18n="key1">Canali sicuri (Web, Teams, Email)</li>
+            <li data-i18n="key2">Comprensione della query e rilevamento dell'intento</li>
+            <li data-i18n="key3">Retrieval-Augmented Generation (RAG)</li>
+            <li data-i18n="key4">HR Knowledge Base (policy, CCNL, procedure)</li>
+            <li data-i18n="key5">Escalation umana per i casi complessi</li>
+            <li data-i18n="key6">Analytics per il miglioramento continuo</li>
+          </ul>
+        </div>
+        <div class="cs-col">
+          <figure class="cs-diagram">
+            <img src="./assets/gb-architecture.png" alt="GenBot system architecture" loading="lazy" />
+            <figcaption data-i18n="archCaption">
+              Architettura MVP modulare e attenta alla privacy — progettata per operazioni
+              enterprise scalabili.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="cs-full">
+        <h2 data-i18n="escalationTitle">WORKFLOW DI ESCALATION INTELLIGENTE</h2>
+        <figure class="cs-diagram">
+          <img src="./assets/gb-escalation.png" alt="GenBot intelligent escalation workflow" loading="lazy" />
+          <figcaption data-i18n="escalationCaption">
+            Massimizzare l'efficienza HR attraverso una risoluzione AI-first e un'escalation umana
+            selettiva: risposta diretta → chiarimento → contesto aggiuntivo → escalation HR con lo
+            storico completo della conversazione.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="cs-triple">
+        <div>
+          <h2 data-i18n="mattersTitle">PERCHÉ È IMPORTANTE</h2>
+          <div class="cs-diff-card">
+            <i data-lucide="user-check"></i>
+            <div>
+              <strong data-i18n="matters1Title">Esperienza dipendente</strong>
+              <span data-i18n="matters1Desc">Accesso 24/7 a informazioni chiare e affidabili di cui fidarsi.</span>
+            </div>
+          </div>
+          <div class="cs-diff-card">
+            <i data-lucide="gauge"></i>
+            <div>
+              <strong data-i18n="matters2Title">Efficienza operativa</strong>
+              <span data-i18n="matters2Desc">Risposte rapide, accurate e coerenti basate su fonti ufficiali.</span>
+            </div>
+          </div>
+          <div class="cs-diff-card">
+            <i data-lucide="shield-check"></i>
+            <div>
+              <strong data-i18n="matters3Title">Governance e fiducia</strong>
+              <span data-i18n="matters3Desc">Workflow tracciabili e supervisionati da persone, con citazioni chiare.</span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 data-i18n="contribTitle">IL MIO CONTRIBUTO</h2>
+          <ul class="cs-checklist">
+            <li><i data-lucide="check-circle-2"></i><span data-i18n="contrib1">Ho definito il problema di business e il caso d'uso HR.</span></li>
+            <li><i data-lucide="check-circle-2"></i><span data-i18n="contrib2">Ho progettato il percorso del dipendente e la logica di escalation.</span></li>
+            <li><i data-lucide="check-circle-2"></i><span data-i18n="contrib3">Ho contribuito all'architettura RAG e alla struttura della knowledge base.</span></li>
+            <li><i data-lucide="check-circle-2"></i><span data-i18n="contrib4">Ho definito i KPI e il framework di HR intelligence.</span></li>
+            <li><i data-lucide="check-circle-2"></i><span data-i18n="contrib5">Ho strutturato la presentazione e la narrativa di business.</span></li>
+            <li><i data-lucide="check-circle-2"></i><span data-i18n="contrib6">Ho collaborato con il team per consegnare la soluzione finale.</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 data-i18n="techTitle">TECNOLOGIE E METODI</h2>
+          <div class="cs-skill-grid">
+            <span><i data-lucide="bot"></i> Claude · LLMs</span>
+            <span><i data-lucide="search"></i> RAG</span>
+            <span><i data-lucide="message-square-text"></i> NLP</span>
+            <span><i data-lucide="code-2"></i> React</span>
+            <span><i data-lucide="file-code"></i> TypeScript</span>
+            <span><i data-lucide="database"></i> PostgreSQL</span>
+            <span><i data-lucide="layers"></i> pgvector</span>
+            <span><i data-lucide="cloud"></i> Supabase</span>
+            <span><i data-lucide="book-open"></i> <span data-i18n="techKnowledge">Knowledge Management</span></span>
+            <span><i data-lucide="shield"></i> <span data-i18n="techGovernance">Governance dell'IA</span></span>
+            <span><i data-lucide="bar-chart-3"></i> <span data-i18n="techAnalytics">HR Analytics</span></span>
+            <span><i data-lucide="users"></i> <span data-i18n="techUx">Employee Experience</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-gallery-section">
+        <div class="cs-gallery">
+          <h2 data-i18n="galleryTitle">GALLERIA DEL PROGETTO</h2>
+          <div class="cs-gallery-grid">
+            <a href="./assets/gb-modes.png" target="_blank" rel="noreferrer" class="cs-gallery-item">
+              <img src="./assets/gb-modes.png" alt="GenBot employee and HR modes" loading="lazy" />
+              <span data-i18n="gallery1">Employee Mode e HR Mode</span>
+            </a>
+            <a href="./assets/gb-challenge.png" target="_blank" rel="noreferrer" class="cs-gallery-item">
+              <img src="./assets/gb-challenge.png" alt="HR accessibility challenge" loading="lazy" />
+              <span data-i18n="gallery2">La Sfida dell'Accessibilità HR</span>
+            </a>
+            <a href="./assets/gb-architecture.png" target="_blank" rel="noreferrer" class="cs-gallery-item">
+              <img src="./assets/gb-architecture.png" alt="GenBot system architecture" loading="lazy" />
+              <span data-i18n="gallery3">Architettura di Sistema</span>
+            </a>
+            <a href="./assets/gb-intelligence.png" target="_blank" rel="noreferrer" class="cs-gallery-item">
+              <img src="./assets/gb-intelligence.png" alt="HR intelligence KPIs and insights" loading="lazy" />
+              <span data-i18n="gallery4">HR Intelligence e KPI</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="cs-related">
+          <h2 data-i18n="relatedTitle">PROGETTI CORRELATI</h2>
+          <a class="cs-related-item" href="./factorymind-case-study.html">
+            <i data-lucide="box"></i>
+            <div>
+              <strong>FactoryMind</strong>
+              <span data-i18n="relatedFm">Decision intelligence IA per la gestione del rischio</span>
+            </div>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a class="cs-related-item" href="./lifegraph-case-study.html">
+            <i data-lucide="share-2"></i>
+            <div>
+              <strong>LifeGraph AI</strong>
+              <span data-i18n="relatedLg">Customer intelligence IA dagli eventi di vita</span>
+            </div>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a class="cs-related-item" href="./ecoprofit-case-study.html">
+            <i data-lucide="leaf"></i>
+            <div>
+              <strong>EcoProfit AI</strong>
+              <span data-i18n="relatedEp">Intelligenza per la sostenibilità e l'efficienza operativa</span>
+            </div>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <div class="lang-toggle" role="group" aria-label="Language selector">
+      <button type="button" class="lang-option" data-lang="it" aria-pressed="true">IT</button>
+      <button type="button" class="lang-option" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+
+    <script src="./cs-i18n.js?v=20260806"></script>
+    <script src="./i18n-genbot.js?v=20260806"></script>
+  </body>
+</html>
