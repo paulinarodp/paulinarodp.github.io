@@ -34,7 +34,7 @@ initCaseStudyI18n({
     challenge2Desc: "Back-and-forth cycles delay projects and increase cost.",
     challenge3Title: "Not scalable",
     challenge3Desc: "Small teams lack resources to produce high-quality visuals consistently.",
-    solutionTitle: "OUR SOLUTION",
+    solutionTitle: "MY SOLUTION",
     solutionDesc:
       "Forma AI turns design inputs into clear visual directions and client-ready presentations using AI — making communication faster, clearer and more aligned.",
     flow1: "Upload",
@@ -78,10 +78,6 @@ initCaseStudyI18n({
     gallery2: "Creative Studio",
     gallery3: "Style Directions",
     gallery4: "Client Presentation",
-    relatedTitle: "RELATED PROJECTS",
-    relatedFm: "AI decision intelligence for risk management",
-    relatedLg: "AI customer intelligence from life events",
-    relatedGb: "Conversational AI for HR self-service",
   },
   it: {
     pageTitle: "Forma AI | Case Study — Paulina Rodriguez Pina",
@@ -118,7 +114,7 @@ initCaseStudyI18n({
     challenge2Desc: "I cicli di andata e ritorno ritardano i progetti e ne aumentano il costo.",
     challenge3Title: "Non scalabile",
     challenge3Desc: "I piccoli team non hanno risorse per produrre visual di alta qualità con costanza.",
-    solutionTitle: "LA NOSTRA SOLUZIONE",
+    solutionTitle: "LA MIA SOLUZIONE",
     solutionDesc:
       "Forma AI trasforma gli input progettuali in direzioni visive chiare e presentazioni pronte per il cliente usando l'IA — rendendo la comunicazione più rapida, più chiara e più allineata.",
     flow1: "Carica",
@@ -162,9 +158,5 @@ initCaseStudyI18n({
     gallery2: "Creative Studio",
     gallery3: "Direzioni Stilistiche",
     gallery4: "Presentazione Cliente",
-    relatedTitle: "PROGETTI CORRELATI",
-    relatedFm: "Decision intelligence IA per la gestione del rischio",
-    relatedLg: "Customer intelligence IA dagli eventi di vita",
-    relatedGb: "IA conversazionale per il self-service HR",
   },
 });

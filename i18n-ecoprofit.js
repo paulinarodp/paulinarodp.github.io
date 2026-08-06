@@ -35,7 +35,7 @@ initCaseStudyI18n({
     challenge2Desc: "Inefficiencies and emissions drivers go undetected, costing millions.",
     challenge3Title: "Manual &amp; expensive",
     challenge3Desc: "ESG reporting is slow, manual and often not actionable.",
-    solutionTitle: "OUR SOLUTION",
+    solutionTitle: "MY SOLUTION",
     solutionDesc:
       "EcoProfit AI analyzes operational documents and uses AI to identify inefficiencies, estimate impact and recommend actions to improve sustainability and reduce costs.",
     flow1: "Upload Data",
@@ -66,8 +66,6 @@ initCaseStudyI18n({
     techSaas: "SaaS Architecture",
     techGtm: "Go-to-Market",
     contribTitle: "MY CONTRIBUTION",
-    quoteText: "Turning data into decisions that drive both profit and planet impact.",
-    quoteRole: "Business &amp; AI Strategy",
     contrib1: "Defined the business problem and the ESG value model.",
     contrib2: "Designed the document-to-insight flow.",
     contrib3: "Structured the recommendation logic and impact estimation.",
@@ -76,10 +74,6 @@ initCaseStudyI18n({
     gallery1: "Dashboard Overview",
     gallery2: "Document Analysis",
     gallery3: "ESG Mini Report",
-    relatedTitle: "RELATED PROJECTS",
-    relatedFm: "AI decision intelligence for risk management",
-    relatedLg: "AI customer intelligence from life events",
-    relatedFa: "AI-powered design platform for architects",
   },
   it: {
     pageTitle: "EcoProfit AI | Case Study — Paulina Rodriguez Pina",
@@ -117,7 +111,7 @@ initCaseStudyI18n({
     challenge2Desc: "Inefficienze e fonti di emissioni restano invisibili, con costi elevati.",
     challenge3Title: "Manuale e costoso",
     challenge3Desc: "Il reporting ESG è lento, manuale e spesso poco azionabile.",
-    solutionTitle: "LA NOSTRA SOLUZIONE",
+    solutionTitle: "LA MIA SOLUZIONE",
     solutionDesc:
       "EcoProfit AI analizza i documenti operativi e utilizza l'IA per identificare inefficienze, stimare l'impatto e raccomandare azioni che migliorano la sostenibilità e riducono i costi.",
     flow1: "Carica Dati",
@@ -148,9 +142,6 @@ initCaseStudyI18n({
     techSaas: "Architettura SaaS",
     techGtm: "Go-to-Market",
     contribTitle: "IL MIO CONTRIBUTO",
-    quoteText:
-      "Trasformare i dati in decisioni che generano valore sia per il profitto sia per il pianeta.",
-    quoteRole: "Business &amp; AI Strategy",
     contrib1: "Ho definito il problema di business e il modello di valore ESG.",
     contrib2: "Ho progettato il flusso da documento a insight azionabile.",
     contrib3: "Ho strutturato la logica di raccomandazione e la stima dell'impatto.",
@@ -159,9 +150,5 @@ initCaseStudyI18n({
     gallery1: "Panoramica della Dashboard",
     gallery2: "Analisi dei Documenti",
     gallery3: "Mini-Report ESG",
-    relatedTitle: "PROGETTI CORRELATI",
-    relatedFm: "Decision intelligence IA per la gestione del rischio",
-    relatedLg: "Customer intelligence IA dagli eventi di vita",
-    relatedFa: "Piattaforma di design IA per architetti",
   },
 });

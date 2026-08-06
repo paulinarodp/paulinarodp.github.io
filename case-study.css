@@ -676,6 +676,10 @@ i[data-lucide] svg {
   gap: 40px;
 }
 
+.cs-triple-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
 .cs-diff-card {
   display: flex;
   gap: 12px;
@@ -756,25 +760,31 @@ blockquote p {
   line-height: 1.65;
 }
 
-/* GALLERY + RELATED */
-.cs-gallery-section {
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 48px;
-}
-
+/* GALLERY */
 .cs-gallery-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
 }
 
 .cs-gallery-item {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid var(--cs-line);
+  border: 1px solid rgba(208, 144, 76, 0.3);
   background: var(--cs-navy);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.cs-gallery-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cs-gold), rgba(208, 144, 76, 0.1));
+  z-index: 1;
 }
 
 .cs-gallery-item img {
@@ -783,6 +793,12 @@ blockquote p {
   object-position: top;
   opacity: 0.92;
   transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.cs-gallery-item:hover {
+  border-color: var(--cs-gold);
+  box-shadow: 0 14px 32px rgba(208, 144, 76, 0.22);
+  transform: translateY(-2px);
 }
 
 .cs-gallery-item:hover img {
@@ -910,8 +926,7 @@ blockquote p {
     border-left: none;
   }
 
-  .cs-architecture,
-  .cs-gallery-section {
+  .cs-architecture {
     grid-template-columns: 1fr;
   }
 
