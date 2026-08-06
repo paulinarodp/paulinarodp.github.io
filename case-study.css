@@ -1040,9 +1040,14 @@ body.theme-eco {
 }
 
 body.theme-factorymind .cs-hero {
+  grid-template-columns: 1fr;
   background:
     linear-gradient(100deg, rgba(11, 21, 38, 0.95) 0%, rgba(11, 21, 38, 0.72) 40%, rgba(11, 21, 38, 0.32) 100%),
     url("./assets/fm-hero-bg.png") center right / cover no-repeat;
+}
+
+body.theme-factorymind .cs-hero-copy {
+  max-width: 620px;
 }
 
 /* Light hero variant (Forma AI / GenBot use a pale hero) */
