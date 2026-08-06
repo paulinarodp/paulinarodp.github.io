@@ -34,7 +34,7 @@ initCaseStudyI18n({
     challenge2Desc: "Information is siloed across banking, insurance, energy, telco and logistics.",
     challenge3Title: "Delayed engagement",
     challenge3Desc: "Slow response cycles lead to lost opportunities and lower satisfaction.",
-    solutionTitle: "MY SOLUTION",
+    solutionTitle: "SOLUTION",
     solutionDesc:
       "LifeGraph AI detects life events in near real-time and activates the right offer, in the right channel, at the right moment — turning data into stronger, long-term customer relationships.",
     flow1: "Detect Signals",
@@ -103,7 +103,7 @@ initCaseStudyI18n({
     challenge2Desc: "Le informazioni sono in silos tra banca, assicurazioni, energia, telco e logistica.",
     challenge3Title: "Ingaggio tardivo",
     challenge3Desc: "Cicli di risposta lenti portano a opportunità perse e minore soddisfazione.",
-    solutionTitle: "LA MIA SOLUZIONE",
+    solutionTitle: "LA SOLUZIONE",
     solutionDesc:
       "LifeGraph AI rileva gli eventi di vita quasi in tempo reale e attiva l'offerta giusta, nel canale giusto, al momento giusto — trasformando i dati in relazioni più solide e durature con il cliente.",
     flow1: "Rileva Segnali",

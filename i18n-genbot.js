@@ -19,7 +19,6 @@ initCaseStudyI18n({
     heroStat3Value: "Higher",
     heroStat3: "Employee satisfaction and trust",
     btnPresentation: "Presentation",
-    privateArchive: "Private project archive",
     cap1Title: "HR KNOWLEDGE BASE",
     cap1Desc: "Centralized access to policies, procedures and guidelines.",
     cap2Title: "EMPLOYEE SUPPORT",
@@ -46,7 +45,7 @@ initCaseStudyI18n({
     challenge2Desc: "Policies and procedures are stored in disconnected sources.",
     challenge3Title: "Disconnected experience",
     challenge3Desc: "Employees face slow response times and inconsistent answers.",
-    solutionTitle: "MY SOLUTION",
+    solutionTitle: "SOLUTION",
     solutionDesc:
       "GenBot is an AI-powered HR assistant that combines Retrieval-Augmented Generation (RAG) with official company knowledge to deliver accurate, secure and instant responses.",
     flow1: "Question",
@@ -110,7 +109,6 @@ initCaseStudyI18n({
     heroStat3Value: "Maggiore",
     heroStat3: "Soddisfazione e fiducia dei dipendenti",
     btnPresentation: "Presentazione",
-    privateArchive: "Archivio progetto privato",
     cap1Title: "HR KNOWLEDGE BASE",
     cap1Desc: "Accesso centralizzato a policy, procedure e linee guida.",
     cap2Title: "SUPPORTO AI DIPENDENTI",
@@ -137,7 +135,7 @@ initCaseStudyI18n({
     challenge2Desc: "Policy e procedure sono archiviate in fonti scollegate tra loro.",
     challenge3Title: "Esperienza disconnessa",
     challenge3Desc: "I dipendenti affrontano tempi di risposta lenti e risposte incoerenti.",
-    solutionTitle: "LA MIA SOLUZIONE",
+    solutionTitle: "LA SOLUZIONE",
     solutionDesc:
       "GenBot è un assistente HR basato su IA che combina la Retrieval-Augmented Generation (RAG) con la conoscenza aziendale ufficiale per fornire risposte accurate, sicure e immediate.",
     flow1: "Domanda",

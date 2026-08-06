@@ -2,14 +2,15 @@
   --cs-bg: #f7f4ee;
   --cs-panel: #ffffff;
   --cs-ink: #16202c;
-  --cs-muted: #5b6470;
-  --cs-dim: #8a919b;
+  --cs-muted: #454f5b;
+  --cs-dim: #6f7883;
   --cs-navy: #0b1526;
   --cs-navy-soft: #142238;
   --cs-gold: #d0944c;
   --cs-gold-soft: rgba(208, 144, 76, 0.14);
-  --cs-line: rgba(11, 21, 38, 0.1);
-  --cs-shadow: 0 24px 60px rgba(11, 21, 38, 0.1);
+  --cs-line: rgba(11, 21, 38, 0.18);
+  --cs-shadow: 0 18px 40px rgba(11, 21, 38, 0.1);
+  --cs-card-shadow: 0 2px 10px rgba(11, 21, 38, 0.06);
   color-scheme: light;
 }
 
@@ -257,6 +258,12 @@ i[data-lucide] svg {
   filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.45));
 }
 
+.cs-hero-flat-img {
+  width: 100%;
+  display: block;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.35));
+}
+
 .cs-laptop-screen {
   border-radius: 10px 10px 4px 4px;
   border: 10px solid #1b2536;
@@ -380,6 +387,7 @@ i[data-lucide] svg {
   background: var(--cs-panel);
   border: 1px solid var(--cs-line);
   border-radius: 10px;
+  box-shadow: var(--cs-card-shadow);
 }
 
 .cs-mini-card i {
@@ -423,6 +431,7 @@ i[data-lucide] svg {
   background: var(--cs-panel);
   border: 1px solid var(--cs-line);
   border-radius: 10px;
+  box-shadow: var(--cs-card-shadow);
 }
 
 .cs-flow-step i {
@@ -555,6 +564,7 @@ i[data-lucide] svg {
   background: var(--cs-panel);
   border: 1px solid var(--cs-line);
   border-radius: 10px;
+  box-shadow: var(--cs-card-shadow);
 }
 
 .cs-icon-card i {
@@ -736,6 +746,7 @@ i[data-lucide] svg {
   border-radius: 8px;
   font-size: 0.78rem;
   font-weight: 600;
+  box-shadow: var(--cs-card-shadow);
 }
 
 .cs-skill-grid i {
@@ -1067,8 +1078,9 @@ body.theme-factorymind .cs-hero-copy {
 }
 
 .cs-hero-light .cs-badge-outline {
-  border-color: var(--cs-line);
-  color: var(--cs-muted);
+  border-color: rgba(11, 21, 38, 0.3);
+  background: rgba(11, 21, 38, 0.04);
+  color: var(--cs-ink);
 }
 
 .cs-hero-light .cs-btn-outline {
@@ -1138,6 +1150,24 @@ body.theme-factorymind .cs-hero-copy {
   font-size: 0.74rem;
   line-height: 1.35;
   opacity: 0.75;
+}
+
+/* GenBot hero: copy | mascot | capability cards */
+body.theme-genbot .cs-hero {
+  grid-template-columns: 1fr 0.55fr 0.9fr;
+  align-items: center;
+  gap: 32px;
+}
+
+.cs-hero-mascot {
+  display: flex;
+  justify-content: center;
+}
+
+.cs-hero-mascot img {
+  width: 100%;
+  max-width: 320px;
+  display: block;
 }
 
 /* Hero side panel cards (GenBot capability list) */
@@ -1337,6 +1367,14 @@ body.theme-factorymind .cs-hero-copy {
 
   .cs-gallery-grid.cs-gallery-5 {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  body.theme-genbot .cs-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-hero-mascot img {
+    max-width: 180px;
   }
 }
 

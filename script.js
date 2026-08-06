@@ -57,7 +57,6 @@ const translations = {
     gbTag1: "HR Tech",
     gbTag2: "Chatbot",
     gbTag3: "Knowledge Access",
-    privateArchive: "Private project archive",
     lgSubtitle: "Customer Intelligence · Personalization",
     lgDesc:
       "An AI-driven customer intelligence platform that uses life-event signals to deliver relevant recommendations and engagement.",
@@ -156,7 +155,6 @@ const translations = {
     gbTag1: "HR Tech",
     gbTag2: "Chatbot",
     gbTag3: "Accesso alla Conoscenza",
-    privateArchive: "Archivio progetto privato",
     lgSubtitle: "Customer Intelligence · Personalizzazione",
     lgDesc:
       "Piattaforma di customer intelligence basata su IA che utilizza segnali legati agli eventi di vita per offrire raccomandazioni e coinvolgimento rilevanti.",

@@ -13,7 +13,7 @@ initCaseStudyI18n({
     heroKicker: "AI DECISION INTELLIGENCE PLATFORM",
     heroSubtitle: "for Supply Chain Risk Management",
     heroDesc:
-      "Designed a governed multi-agent AI platform that connects operational and financial data to support faster, explainable decision-making across procurement, production and finance.",
+      "A governed multi-agent AI platform that connects operational and financial data to support faster, explainable decision-making across procurement, production and finance.",
     btnLiveDemo: "Live Demo",
     btnPresentation: "Presentation",
     metaRole: "ROLE",
@@ -62,10 +62,7 @@ initCaseStudyI18n({
     sol4Desc: "Managers approve before execution.",
     archTitle: "ARCHITECTURE OVERVIEW",
     archCaption:
-      "Enterprise Knowledge Graph — 272 nodes · 1,217 edges: the living map of every signal, asset and decision.",
-    legendInfo: "Information Flow",
-    legendEvidence: "Evidence Flow",
-    legendHuman: "Human Governance",
+      "From operational data to the Decision Packet: specialist agents and the Enterprise Knowledge Graph feed the exposure orchestrator, ending in manager approval.",
     howTitle: "HOW IT WORKS",
     how1Title: "Collect &amp; Validate Signals",
     how1Desc: "Specialist agents continuously monitor operational, financial and market signals.",
@@ -113,7 +110,7 @@ initCaseStudyI18n({
     heroKicker: "PIATTAFORMA DI AI DECISION INTELLIGENCE",
     heroSubtitle: "per la Gestione del Rischio nella Supply Chain",
     heroDesc:
-      "Ho progettato una piattaforma AI multi-agente e governata che collega dati operativi e finanziari per supportare decisioni più rapide e spiegabili in ambito procurement, produzione e finanza.",
+      "Una piattaforma AI multi-agente e governata che collega dati operativi e finanziari per supportare decisioni più rapide e spiegabili in ambito procurement, produzione e finanza.",
     btnLiveDemo: "Live Demo",
     btnPresentation: "Presentazione",
     metaRole: "RUOLO",
@@ -162,10 +159,7 @@ initCaseStudyI18n({
     sol4Desc: "I manager approvano prima dell'esecuzione.",
     archTitle: "PANORAMICA DELL'ARCHITETTURA",
     archCaption:
-      "Enterprise Knowledge Graph — 272 nodi · 1.217 collegamenti: la mappa vivente di ogni segnale, asset e decisione.",
-    legendInfo: "Flusso di informazioni",
-    legendEvidence: "Flusso di evidenze",
-    legendHuman: "Governance umana",
+      "Dai dati operativi al Decision Packet: agenti specialistici e Knowledge Graph alimentano l'orchestratore di esposizione, fino all'approvazione manageriale finale.",
     howTitle: "COME FUNZIONA",
     how1Title: "Raccogliere e Validare i Segnali",
     how1Desc: "Gli agenti specializzati monitorano continuamente i segnali operativi, finanziari e di mercato.",

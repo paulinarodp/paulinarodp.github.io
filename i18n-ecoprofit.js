@@ -35,7 +35,7 @@ initCaseStudyI18n({
     challenge2Desc: "Inefficiencies and emissions drivers go undetected, costing millions.",
     challenge3Title: "Manual &amp; expensive",
     challenge3Desc: "ESG reporting is slow, manual and often not actionable.",
-    solutionTitle: "MY SOLUTION",
+    solutionTitle: "SOLUTION",
     solutionDesc:
       "EcoProfit AI analyzes operational documents and uses AI to identify inefficiencies, estimate impact and recommend actions to improve sustainability and reduce costs.",
     flow1: "Upload Data",
@@ -106,7 +106,7 @@ initCaseStudyI18n({
     challenge2Desc: "Inefficienze e fonti di emissioni restano invisibili, con costi elevati.",
     challenge3Title: "Manuale e costoso",
     challenge3Desc: "Il reporting ESG è lento, manuale e spesso poco azionabile.",
-    solutionTitle: "LA MIA SOLUZIONE",
+    solutionTitle: "LA SOLUZIONE",
     solutionDesc:
       "EcoProfit AI analizza i documenti operativi e utilizza l'IA per identificare inefficienze, stimare l'impatto e raccomandare azioni che migliorano la sostenibilità e riducono i costi.",
     flow1: "Carica Dati",

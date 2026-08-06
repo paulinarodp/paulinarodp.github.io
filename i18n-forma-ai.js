@@ -34,7 +34,7 @@ initCaseStudyI18n({
     challenge2Desc: "Back-and-forth cycles delay projects and increase cost.",
     challenge3Title: "Not scalable",
     challenge3Desc: "Small teams lack resources to produce high-quality visuals consistently.",
-    solutionTitle: "MY SOLUTION",
+    solutionTitle: "SOLUTION",
     solutionDesc:
       "Forma AI turns design inputs into clear visual directions and client-ready presentations using AI — making communication faster, clearer and more aligned.",
     flow1: "Upload",
@@ -107,7 +107,7 @@ initCaseStudyI18n({
     challenge2Desc: "I cicli di andata e ritorno ritardano i progetti e ne aumentano il costo.",
     challenge3Title: "Non scalabile",
     challenge3Desc: "I piccoli team non hanno risorse per produrre visual di alta qualità con costanza.",
-    solutionTitle: "LA MIA SOLUZIONE",
+    solutionTitle: "LA SOLUZIONE",
     solutionDesc:
       "Forma AI trasforma gli input progettuali in direzioni visive chiare e presentazioni pronte per il cliente usando l'IA — rendendo la comunicazione più rapida, più chiara e più allineata.",
     flow1: "Carica",
