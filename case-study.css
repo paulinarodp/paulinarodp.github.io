@@ -353,6 +353,14 @@ i[data-lucide] svg {
   gap: 48px;
 }
 
+.cs-solo .cs-col p {
+  max-width: 640px;
+}
+
+.cs-solo .cs-icon-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .cs-col p {
   color: var(--cs-muted);
   line-height: 1.7;
@@ -930,6 +938,10 @@ blockquote p {
     grid-template-columns: 1fr;
   }
 
+  .cs-solo .cs-icon-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .cs-triple {
     grid-template-columns: 1fr;
     gap: 48px;
@@ -979,7 +991,8 @@ blockquote p {
 
   .cs-icon-grid,
   .cs-gallery-grid,
-  .cs-skill-grid {
+  .cs-skill-grid,
+  .cs-solo .cs-icon-grid {
     grid-template-columns: 1fr;
   }
 
