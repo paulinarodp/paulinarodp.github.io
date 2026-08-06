@@ -38,6 +38,7 @@ const translations = {
     btnLiveDemo: "Live Demo",
     btnPresentation: "Presentation",
     btnGithubRepo: "GitHub Repo",
+    btnCaseStudy: "View Case Study",
     faSubtitle: "AI Product · Design Communication",
     faDesc:
       "An AI platform for architects to transform sketches, plans and site photos into visual directions and client-ready proposal assets.",
@@ -136,6 +137,7 @@ const translations = {
     btnLiveDemo: "Live Demo",
     btnPresentation: "Presentazione",
     btnGithubRepo: "GitHub Repo",
+    btnCaseStudy: "Vedi Case Study",
     faSubtitle: "Prodotto IA · Comunicazione di Design",
     faDesc:
       "Una piattaforma IA per architetti che trasforma schizzi, planimetrie e foto del sito in direzioni visive e materiali di proposta pronti per il cliente.",

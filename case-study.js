@@ -1,0 +1,276 @@
+window.lucide?.createIcons();
+
+const translations = {
+  en: {
+    pageTitle: "FactoryMind / CocoaRisk | Case Study — Paulina Rodriguez Pina",
+    metaDescription:
+      "Case study: FactoryMind / CocoaRisk, a governed multi-agent Decision Intelligence platform for supply-chain risk management.",
+    navAbout: "About",
+    navWork: "Work",
+    navSkills: "Skills",
+    navResume: "Resume",
+    navContact: "Contact",
+    backToWork: "Back to work",
+    winnerBadge: "WINNER",
+    heroKicker: "AI DECISION INTELLIGENCE PLATFORM",
+    heroSubtitle: "for Supply Chain Risk Management",
+    heroDesc:
+      "Designed a governed multi-agent AI platform that connects operational and financial data to support faster, explainable decision-making across procurement, production and finance.",
+    btnLiveDemo: "Live Demo",
+    btnPresentation: "Presentation",
+    metaRole: "ROLE",
+    metaRoleValue: "Team Project",
+    metaDuration: "DURATION",
+    metaDurationValue: "4 weeks",
+    metaIndustry: "INDUSTRY",
+    metaIndustryValue: "FMCG / Manufacturing",
+    metaFocus: "FOCUS",
+    metaFocusValue: "Decision Intelligence · Multi-Agent AI · Enterprise Architecture",
+    metaTools: "TOOLS",
+    challengeTitle: "THE CHALLENGE",
+    challengeDesc:
+      "Large manufacturers manage procurement, production, logistics, commercial planning and finance through separate systems. Although each department has visibility into its own operations, executives lack a unified view of enterprise-wide risk when making strategic decisions.",
+    challenge1Title: "Fragmented decision making",
+    challenge1Desc: "Different departments work with isolated data and assumptions.",
+    challenge2Title: "No cross-functional risk visibility",
+    challenge2Desc: "Financial and operational impacts are evaluated separately.",
+    challenge3Title: "Slow executive decisions",
+    challenge3Desc: "Critical decisions rely on manual consolidation rather than real-time intelligence.",
+    asisTitle: "AS-IS PROCESS — MONTHLY S&amp;OP CYCLE",
+    flowProcurement: "Procurement",
+    flowProcurementDesc: "Prices, suppliers, contracts",
+    flowProduction: "Production",
+    flowProductionDesc: "Capacity, recipes, constraints",
+    flowLogistics: "Logistics",
+    flowLogisticsDesc: "Ports, freight, lead times",
+    flowCommercial: "Commercial",
+    flowCommercialDesc: "Demand, backlog, commitments",
+    flowFinance: "Finance",
+    flowFinanceDesc: "Margins, cash, risk exposure",
+    manualTitle: "MANUAL CONSOLIDATION &amp; DISCUSSION",
+    manualDesc: "4-7 days · ~130 person-hours · no scenarios · no audit trail",
+    execTitle: "EXECUTIVE S&amp;OP DECISION",
+    execDesc: "One plan approved for the business",
+    contribTitle: "MY CONTRIBUTION",
+    contrib1: "Defined the business problem and translated it into an AI-enabled solution.",
+    contrib2: "Designed the enterprise decision workflow and escalation logic.",
+    contrib3: "Contributed to the multi-agent architecture and business process mapping.",
+    contrib4: "Structured the executive presentation and business narrative.",
+    contrib5: "Collaborated with a multidisciplinary team throughout the challenge.",
+    solutionTitle: "THE SOLUTION",
+    solutionDesc:
+      "FactoryMind is a Decision Intelligence platform that transforms fragmented operational, financial and market signals into structured decision support. It quantifies enterprise exposure, simulates alternative actions and delivers explainable recommendations — always with human approval.",
+    sol1Title: "Quantify Exposure",
+    sol1Desc: "Unified view of risk across the enterprise.",
+    sol2Title: "Simulate Scenarios",
+    sol2Desc: "Monte Carlo simulations to evaluate alternatives.",
+    sol3Title: "Explain &amp; Recommend",
+    sol3Desc: "Transparent rationale for every action.",
+    sol4Title: "Human Approval",
+    sol4Desc: "Managers approve before execution.",
+    archTitle: "ARCHITECTURE OVERVIEW",
+    archCaption:
+      "Enterprise Knowledge Graph — 272 nodes · 1,217 edges: the living map of every signal, asset and decision.",
+    legendInfo: "Information Flow",
+    legendEvidence: "Evidence Flow",
+    legendHuman: "Human Governance",
+    howTitle: "HOW IT WORKS",
+    how1Title: "Collect &amp; Validate Signals",
+    how1Desc: "Specialist agents continuously monitor operational, financial and market signals.",
+    how2Title: "Update Knowledge Graph",
+    how2Desc: "Validated information is stored in a unified enterprise graph.",
+    how3Title: "Evaluate &amp; Simulate",
+    how3Desc: "The orchestrator assesses materiality and runs Monte Carlo simulations.",
+    how4Title: "Create Decision Packet",
+    how4Desc: "The best actions are compiled into an explainable, audit-ready decision packet.",
+    how5Title: "Human Approval",
+    how5Desc: "Managers review and approve the recommended action before execution.",
+    diffTitle: "WHY IT IS DIFFERENT",
+    diff1Title: "Explainable AI",
+    diff1Desc: "Every recommendation is transparent, traceable and auditable.",
+    diff2Title: "Human-in-the-loop",
+    diff2Desc: "AI supports decisions — humans retain full control.",
+    diff3Title: "Enterprise-ready",
+    diff3Desc: "Built with governance, scalability and cross-functional collaboration in mind.",
+    skillsTitle: "SKILLS APPLIED",
+    skillA: "Business Strategy",
+    skillB: "Enterprise Architecture",
+    skillC: "Risk Analysis",
+    skillD: "Decision Intelligence",
+    skillE: "AI Governance",
+    skillF: "Problem Structuring",
+    skillG: "Executive Communication",
+    skillH: "Stakeholder Thinking",
+    learnedTitle: "WHAT I LEARNED",
+    learnedDesc:
+      "This project reinforced my interest in designing AI systems that help business leaders make better decisions. Beyond the technical architecture, I learned how to translate complex operational problems into structured business solutions while balancing governance, explainability and organizational adoption.",
+    galleryTitle: "PROJECT GALLERY",
+    gallery1: "Architecture Diagram",
+    gallery2: "Executive Dashboard",
+    gallery3: "Decision Packet Example",
+    gallery4: "Agent Workflow",
+    relatedTitle: "RELATED PROJECTS",
+    related1: "AI-driven customer intelligence using life-event signals",
+    related2: "Conversational AI for HR self-service and employee support",
+    related3: "AI platform for architects that turns sketches into proposals",
+  },
+  it: {
+    pageTitle: "FactoryMind / CocoaRisk | Case Study — Paulina Rodriguez Pina",
+    metaDescription:
+      "Case study: FactoryMind / CocoaRisk, piattaforma di Decision Intelligence multi-agente per la gestione del rischio nella supply chain.",
+    navAbout: "About",
+    navWork: "Work",
+    navSkills: "Skills",
+    navResume: "Curriculum",
+    navContact: "Contatti",
+    backToWork: "Torna ai progetti",
+    winnerBadge: "VINCITORE",
+    heroKicker: "PIATTAFORMA DI AI DECISION INTELLIGENCE",
+    heroSubtitle: "per la Gestione del Rischio nella Supply Chain",
+    heroDesc:
+      "Ho progettato una piattaforma AI multi-agente e governata che collega dati operativi e finanziari per supportare decisioni più rapide e spiegabili in ambito procurement, produzione e finanza.",
+    btnLiveDemo: "Live Demo",
+    btnPresentation: "Presentazione",
+    metaRole: "RUOLO",
+    metaRoleValue: "Progetto di gruppo",
+    metaDuration: "DURATA",
+    metaDurationValue: "4 settimane",
+    metaIndustry: "SETTORE",
+    metaIndustryValue: "FMCG / Manifatturiero",
+    metaFocus: "FOCUS",
+    metaFocusValue: "Decision Intelligence · IA Multi-Agente · Architettura Enterprise",
+    metaTools: "STRUMENTI",
+    challengeTitle: "IL PROBLEMA",
+    challengeDesc:
+      "I grandi produttori gestiscono procurement, produzione, logistica, pianificazione commerciale e finanza attraverso sistemi separati. Anche se ogni dipartimento ha visibilità sulle proprie operazioni, i dirigenti non hanno una vista unificata del rischio aziendale quando devono prendere decisioni strategiche.",
+    challenge1Title: "Decisioni frammentate",
+    challenge1Desc: "Ogni dipartimento lavora con dati e assunzioni isolate.",
+    challenge2Title: "Nessuna visibilità cross-funzionale",
+    challenge2Desc: "Gli impatti finanziari e operativi vengono valutati separatamente.",
+    challenge3Title: "Decisioni esecutive lente",
+    challenge3Desc: "Le decisioni critiche dipendono da un consolidamento manuale invece che da intelligence in tempo reale.",
+    asisTitle: "PROCESSO AS-IS — CICLO S&amp;OP MENSILE",
+    flowProcurement: "Procurement",
+    flowProcurementDesc: "Prezzi, fornitori, contratti",
+    flowProduction: "Produzione",
+    flowProductionDesc: "Capacità, ricette, vincoli",
+    flowLogistics: "Logistica",
+    flowLogisticsDesc: "Porti, spedizioni, lead time",
+    flowCommercial: "Commerciale",
+    flowCommercialDesc: "Domanda, backlog, impegni",
+    flowFinance: "Finanza",
+    flowFinanceDesc: "Margini, cassa, esposizione al rischio",
+    manualTitle: "CONSOLIDAMENTO E DISCUSSIONE MANUALE",
+    manualDesc: "4-7 giorni · ~130 ore/persona · nessuno scenario · nessuna tracciabilità",
+    execTitle: "DECISIONE ESECUTIVA S&amp;OP",
+    execDesc: "Un solo piano approvato per l'azienda",
+    contribTitle: "IL MIO CONTRIBUTO",
+    contrib1: "Ho definito il problema di business e l'ho tradotto in una soluzione abilitata dall'IA.",
+    contrib2: "Ho progettato il workflow decisionale aziendale e la logica di escalation.",
+    contrib3: "Ho contribuito all'architettura multi-agente e alla mappatura dei processi.",
+    contrib4: "Ho strutturato la presentazione esecutiva e la narrativa di business.",
+    contrib5: "Ho collaborato con un team multidisciplinare durante tutta la challenge.",
+    solutionTitle: "LA SOLUZIONE",
+    solutionDesc:
+      "FactoryMind è una piattaforma di Decision Intelligence che trasforma segnali operativi, finanziari e di mercato frammentati in supporto decisionale strutturato. Quantifica l'esposizione aziendale, simula azioni alternative e fornisce raccomandazioni spiegabili — sempre con approvazione umana.",
+    sol1Title: "Quantificare l'Esposizione",
+    sol1Desc: "Vista unificata del rischio in tutta l'azienda.",
+    sol2Title: "Simulare Scenari",
+    sol2Desc: "Simulazioni Monte Carlo per valutare alternative.",
+    sol3Title: "Spiegare e Raccomandare",
+    sol3Desc: "Motivazione trasparente per ogni azione.",
+    sol4Title: "Approvazione Umana",
+    sol4Desc: "I manager approvano prima dell'esecuzione.",
+    archTitle: "PANORAMICA DELL'ARCHITETTURA",
+    archCaption:
+      "Enterprise Knowledge Graph — 272 nodi · 1.217 collegamenti: la mappa vivente di ogni segnale, asset e decisione.",
+    legendInfo: "Flusso di informazioni",
+    legendEvidence: "Flusso di evidenze",
+    legendHuman: "Governance umana",
+    howTitle: "COME FUNZIONA",
+    how1Title: "Raccogliere e Validare i Segnali",
+    how1Desc: "Gli agenti specializzati monitorano continuamente i segnali operativi, finanziari e di mercato.",
+    how2Title: "Aggiornare il Knowledge Graph",
+    how2Desc: "Le informazioni validate vengono archiviate in un grafo aziendale unificato.",
+    how3Title: "Valutare e Simulare",
+    how3Desc: "L'orchestratore valuta la materialità ed esegue simulazioni Monte Carlo.",
+    how4Title: "Creare il Decision Packet",
+    how4Desc: "Le migliori azioni vengono raccolte in un pacchetto decisionale spiegabile e tracciabile.",
+    how5Title: "Approvazione Umana",
+    how5Desc: "I manager rivedono e approvano l'azione raccomandata prima dell'esecuzione.",
+    diffTitle: "COSA LO RENDE DIVERSO",
+    diff1Title: "IA Spiegabile",
+    diff1Desc: "Ogni raccomandazione è trasparente, tracciabile e verificabile.",
+    diff2Title: "Human-in-the-loop",
+    diff2Desc: "L'IA supporta le decisioni — il controllo resta alle persone.",
+    diff3Title: "Pronto per l'Enterprise",
+    diff3Desc: "Costruito pensando a governance, scalabilità e collaborazione cross-funzionale.",
+    skillsTitle: "COMPETENZE APPLICATE",
+    skillA: "Strategia di Business",
+    skillB: "Architettura Enterprise",
+    skillC: "Analisi del Rischio",
+    skillD: "Decision Intelligence",
+    skillE: "Governance dell'IA",
+    skillF: "Problem Structuring",
+    skillG: "Comunicazione Esecutiva",
+    skillH: "Stakeholder Thinking",
+    learnedTitle: "COSA HO IMPARATO",
+    learnedDesc:
+      "Questo progetto ha rafforzato il mio interesse nel progettare sistemi di IA che aiutano i leader aziendali a prendere decisioni migliori. Oltre all'architettura tecnica, ho imparato a tradurre problemi operativi complessi in soluzioni di business strutturate, bilanciando governance, spiegabilità e adozione organizzativa.",
+    galleryTitle: "GALLERIA DEL PROGETTO",
+    gallery1: "Diagramma dell'Architettura",
+    gallery2: "Dashboard Esecutiva",
+    gallery3: "Esempio di Decision Packet",
+    gallery4: "Workflow degli Agenti",
+    relatedTitle: "PROGETTI CORRELATI",
+    related1: "Customer intelligence basata su IA che usa segnali di eventi di vita",
+    related2: "IA conversazionale per il self-service HR e il supporto ai dipendenti",
+    related3: "Piattaforma IA per architetti che trasforma schizzi in proposte",
+  },
+};
+
+const LANG_STORAGE_KEY = "site-lang";
+const langToggle = document.querySelector(".lang-toggle");
+const langOptions = Array.from(document.querySelectorAll(".lang-option"));
+
+function applyLanguage(lang) {
+  const dict = translations[lang] || translations.it;
+
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    if (dict[key] !== undefined) {
+      el.innerHTML = dict[key];
+    }
+  });
+
+  const metaDescriptionEl = document.querySelector('[data-i18n-meta="metaDescription"]');
+  if (metaDescriptionEl && dict.metaDescription) {
+    metaDescriptionEl.setAttribute("content", dict.metaDescription);
+  }
+
+  if (dict.pageTitle) {
+    document.title = dict.pageTitle;
+  }
+
+  langOptions.forEach((btn) => {
+    const isActive = btn.getAttribute("data-lang") === lang;
+    btn.classList.toggle("active", isActive);
+    btn.setAttribute("aria-pressed", String(isActive));
+  });
+
+  window.lucide?.createIcons();
+}
+
+const storedLang = localStorage.getItem(LANG_STORAGE_KEY);
+const initialLang = storedLang === "en" || storedLang === "it" ? storedLang : "it";
+applyLanguage(initialLang);
+
+langToggle?.addEventListener("click", (event) => {
+  const button = event.target.closest(".lang-option");
+  if (!button) return;
+  const lang = button.getAttribute("data-lang");
+  localStorage.setItem(LANG_STORAGE_KEY, lang);
+  applyLanguage(lang);
+});

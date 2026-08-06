@@ -565,6 +565,7 @@ p {
 }
 
 .card-media {
+  display: block;
   width: 100%;
   aspect-ratio: 1 / 0.72;
   margin-bottom: 20px;
@@ -623,6 +624,26 @@ p {
   font-size: clamp(1.62rem, 2.1vw, 2.2rem);
   font-weight: 600;
   line-height: 1.05;
+}
+
+.work-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.work-card h3 a:hover {
+  color: var(--orange);
+}
+
+.card-actions a.case-study-link {
+  border-color: var(--orange);
+  background: var(--orange);
+  color: var(--bg);
+  font-weight: 800;
+}
+
+.card-actions a.case-study-link:hover {
+  filter: brightness(1.06);
 }
 
 .featured-project h3 {
@@ -724,7 +745,7 @@ p {
 }
 
 .featured-project .card-actions {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .presentation-card-actions {
