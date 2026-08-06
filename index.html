@@ -99,7 +99,7 @@
         <div class="nav-links" id="nav-links">
           <a class="active" href="#overview"><i data-lucide="home"></i><span data-i18n="navOverview">Panoramica</span></a>
           <a href="#work"><i data-lucide="folder-kanban"></i><span data-i18n="navWork">Progetti Selezionati</span></a>
-          <a href="#presentations"><i data-lucide="presentation"></i><span data-i18n="navPresentations">Presentazioni</span></a>
+          <a href="#presentations" hidden><i data-lucide="presentation"></i><span data-i18n="navPresentations">Presentazioni</span></a>
           <a href="#resume-cv"><i data-lucide="badge"></i><span data-i18n="navResume">Curriculum</span></a>
         </div>
 
@@ -140,12 +140,12 @@
 
           <div class="work-grid">
             <article class="work-card featured-project">
-              <a class="card-media" href="./factorymind-case-study.html">
+              <div class="card-media">
                 <img src="./assets/factorymind.png?v=20260729-cube" alt="FactoryMind CocoaRisk interface preview" />
-              </a>
+              </div>
               <div class="card-content">
                 <span class="project-kicker" data-i18n="featuredKicker">Progetto in Evidenza</span>
-                <h3><a href="./factorymind-case-study.html">FactoryMind / CocoaRisk</a></h3>
+                <h3>FactoryMind / CocoaRisk</h3>
                 <p class="subtitle" data-i18n="fmSubtitle">IA Aziendale · Decision Intelligence</p>
                 <p class="project-result" data-i18n="fmResult">1° posto · Accenture Challenge · LUISS Business School</p>
                 <p class="description" data-i18n="fmDesc">
@@ -160,9 +160,6 @@
                   <span data-i18n="fmTag3">Governance dell'IA</span>
                 </div>
                 <div class="card-actions">
-                  <a href="./factorymind-case-study.html" class="case-study-link">
-                    <i data-lucide="file-text"></i> <span data-i18n="btnCaseStudy">Vedi Case Study</span>
-                  </a>
                   <a href="https://factorymind-artifact.vercel.app" target="_blank" rel="noreferrer">
                     <span data-i18n="btnLiveDemo">Live Demo</span> <i data-lucide="arrow-up-right"></i>
                   </a>
@@ -177,21 +174,20 @@
             </article>
 
             <article class="work-card">
-              <a class="card-media" href="./genbot-case-study.html">
-                <img src="./assets/genbot.png?v=20260806-mascot" alt="GenBot HR Assistant mascot preview" />
-              </a>
+              <div class="card-media">
+                <video controls preload="metadata" poster="./assets/genbot.png?v=20260806-mascot">
+                  <source src="./assets/genbot-demo.mp4" type="video/mp4" />
+                </video>
+              </div>
               <div class="card-content">
-                <h3><a href="./genbot-case-study.html">GenBot HR Assistant</a></h3>
+                <h3>GenBot HR Assistant</h3>
                 <p class="subtitle" data-i18n="gbSubtitle">IA Conversazionale · Esperienza dei Dipendenti</p>
                 <p class="description" data-i18n="gbDesc">
                   Assistente HR basato su IA che aiuta i dipendenti a trovare risposte su
                   policy, benefit, ferie, buste paga e processi interni.
                 </p>
                 <div class="tag-row"><span data-i18n="gbTag1">HR Tech</span><span data-i18n="gbTag2">Chatbot</span><span data-i18n="gbTag3">Accesso alla Conoscenza</span></div>
-                <div class="card-actions">
-                  <a href="./genbot-case-study.html" class="case-study-link">
-                    <i data-lucide="file-text"></i> <span data-i18n="btnCaseStudy">Vedi Case Study</span>
-                  </a>
+                <div class="card-actions presentation-card-actions">
                   <a href="./assets/genbot-final-presentation.pdf" target="_blank" rel="noreferrer">
                     <i data-lucide="presentation"></i> <span data-i18n="btnPresentation">Presentazione</span>
                   </a>
@@ -200,11 +196,11 @@
             </article>
 
             <article class="work-card">
-              <a class="card-media" href="./lifegraph-case-study.html">
+              <div class="card-media">
                 <img src="./assets/lifegraph.png?v=20260729-network" alt="LifeGraph AI customer network preview" />
-              </a>
+              </div>
               <div class="card-content">
-                <h3><a href="./lifegraph-case-study.html">LifeGraph AI</a></h3>
+                <h3>LifeGraph AI</h3>
                 <p class="subtitle" data-i18n="lgSubtitle">Customer Intelligence · Personalizzazione</p>
                 <p class="description" data-i18n="lgDesc">
                   Piattaforma di customer intelligence basata su IA che utilizza segnali legati
@@ -212,7 +208,6 @@
                 </p>
                 <div class="tag-row"><span data-i18n="lgTag1">Customer Intelligence</span><span data-i18n="lgTag2">Personalizzazione</span><span data-i18n="lgTag3">IA Responsabile</span></div>
                 <div class="card-actions">
-                  <a href="./lifegraph-case-study.html" class="case-study-link"><i data-lucide="file-text"></i> <span data-i18n="btnCaseStudy">Vedi Case Study</span></a>
                   <a href="https://lifegraph-poste-demo.vercel.app" target="_blank" rel="noreferrer"><span data-i18n="btnLiveDemo">Live Demo</span> <i data-lucide="arrow-up-right"></i></a>
                   <a href="./assets/posteitaliane-hackathon-presentation.pdf" target="_blank" rel="noreferrer"><i data-lucide="presentation"></i> <span data-i18n="btnPresentation">Presentazione</span></a>
                   <a href="https://github.com/paulinarodp/LifeGraph-AI" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> <span data-i18n="btnGithubRepo">GitHub Repo</span></a>
@@ -221,11 +216,13 @@
             </article>
 
             <article class="work-card">
-              <a class="card-media" href="./forma-ai-case-study.html">
-                <img src="./assets/forma-ai.png" alt="Forma AI architecture preview" />
-              </a>
+              <div class="card-media">
+                <video controls preload="metadata" poster="./assets/forma-ai.png">
+                  <source src="./assets/forma-ai-demo.mp4" type="video/mp4" />
+                </video>
+              </div>
               <div class="card-content">
-                <h3><a href="./forma-ai-case-study.html">Forma AI</a></h3>
+                <h3>Forma AI</h3>
                 <p class="subtitle" data-i18n="faSubtitle">Prodotto IA · Comunicazione di Design</p>
                 <p class="description" data-i18n="faDesc">
                   Una piattaforma IA per architetti che trasforma schizzi, planimetrie e foto del
@@ -233,7 +230,6 @@
                 </p>
                 <div class="tag-row"><span data-i18n="faTag1">Prodotto IA</span><span data-i18n="faTag2">Progettazione di Workflow</span><span data-i18n="faTag3">Go-to-Market</span></div>
                 <div class="card-actions">
-                  <a href="./forma-ai-case-study.html" class="case-study-link"><i data-lucide="file-text"></i> <span data-i18n="btnCaseStudy">Vedi Case Study</span></a>
                   <a href="https://forma-ai-local.vercel.app" target="_blank" rel="noreferrer"><span data-i18n="btnLiveDemo">Live Demo</span> <i data-lucide="arrow-up-right"></i></a>
                   <a href="./assets/forma-ai-final-presentation.pdf" target="_blank" rel="noreferrer"><i data-lucide="presentation"></i> <span data-i18n="btnPresentation">Presentazione</span></a>
                   <a href="https://github.com/paulinarodp/Forma-AI" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> <span data-i18n="btnGithubRepo">GitHub Repo</span></a>
@@ -242,11 +238,11 @@
             </article>
 
             <article class="work-card">
-              <a class="card-media" href="./ecoprofit-case-study.html">
+              <div class="card-media">
                 <img src="./assets/ecoprofit.png" alt="EcoProfit AI sustainability dashboard preview" />
-              </a>
+              </div>
               <div class="card-content">
-                <h3><a href="./ecoprofit-case-study.html">EcoProfit AI</a></h3>
+                <h3>EcoProfit AI</h3>
                 <p class="subtitle" data-i18n="epSubtitle">Intelligenza per la Sostenibilità · ROI</p>
                 <p class="description" data-i18n="epDesc">
                   Prototipo IA che analizza documenti, stima le emissioni, identifica
@@ -254,7 +250,6 @@
                 </p>
                 <div class="tag-row"><span data-i18n="epTag1">Sostenibilità</span><span data-i18n="epTag2">ROI</span><span data-i18n="epTag3">Analisi ESG</span></div>
                 <div class="card-actions">
-                  <a href="./ecoprofit-case-study.html" class="case-study-link"><i data-lucide="file-text"></i> <span data-i18n="btnCaseStudy">Vedi Case Study</span></a>
                   <a href="https://ecoprofit-ai.vercel.app" target="_blank" rel="noreferrer"><span data-i18n="btnLiveDemo">Live Demo</span> <i data-lucide="arrow-up-right"></i></a>
                   <a href="./assets/ecoprofit-presentation.pdf" target="_blank" rel="noreferrer"><i data-lucide="presentation"></i> <span data-i18n="btnPresentation">Presentazione</span></a>
                   <a href="https://github.com/paulinarodp/Ecoprofit-AI" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> <span data-i18n="btnGithubRepo">GitHub Repo</span></a>
@@ -264,7 +259,7 @@
           </div>
         </section>
 
-        <section id="presentations" class="presentation-section">
+        <section id="presentations" class="presentation-section" hidden>
           <div class="section-title">
             <i data-lucide="presentation"></i>
             <h2 data-i18n="sectionPresentations">Presentazioni</h2>
