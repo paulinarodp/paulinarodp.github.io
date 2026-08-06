@@ -135,7 +135,10 @@ i[data-lucide] svg {
   grid-template-columns: 1.05fr 0.95fr;
   gap: 48px;
   align-items: center;
-  padding: 64px 40px 72px;
+  padding-top: 64px;
+  padding-bottom: 72px;
+  padding-left: max(40px, calc((100% - 1240px) / 2));
+  padding-right: max(40px, calc((100% - 1240px) / 2));
   background:
     radial-gradient(circle at 82% 18%, rgba(208, 144, 76, 0.16), transparent 40%),
     radial-gradient(circle at 15% 90%, rgba(208, 144, 76, 0.08), transparent 45%),
