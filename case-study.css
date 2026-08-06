@@ -1039,6 +1039,12 @@ body.theme-eco {
   --cs-bg: #f6f8f4;
 }
 
+body.theme-factorymind .cs-hero {
+  background:
+    linear-gradient(100deg, rgba(11, 21, 38, 0.95) 0%, rgba(11, 21, 38, 0.72) 40%, rgba(11, 21, 38, 0.32) 100%),
+    url("./assets/fm-hero-bg.png") center right / cover no-repeat;
+}
+
 /* Light hero variant (Forma AI / GenBot use a pale hero) */
 .cs-hero.cs-hero-light {
   background:
