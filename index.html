@@ -1,14 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#020a12" />
     <meta
       name="description"
-      content="Portfolio of Paulina Rodriguez Pina: finance, process automation and applied AI."
+      content="Portfolio di Paulina Rodriguez Pina: finanza, automazione dei processi e IA applicata."
+      data-i18n-meta="metaDescription"
     />
-    <title>Paulina Rodriguez Pina | Finance · Process Automation · Applied AI</title>
+    <title data-i18n-title="pageTitle">Paulina Rodriguez Pina | Finanza · Automazione dei Processi · IA Applicata</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,24 +17,24 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="./styles.css?v=20260803-presentations" />
+    <link rel="stylesheet" href="./styles.css?v=20260806-lang-toggle" />
   </head>
   <body>
     <div class="portfolio-shell">
-      <aside class="profile-sidebar" aria-label="Profile">
+      <aside class="profile-sidebar" aria-label="Profile" data-i18n-aria="ariaProfile">
         <div class="portrait-ring">
           <img src="./assets/portrait.png?v=20260729-portrait" alt="Portrait of Paulina Rodriguez Pina" />
         </div>
 
         <div class="identity">
           <h1>Paulina<br />Rodriguez Piña</h1>
-          <p>Finance · Process Automation · Applied AI</p>
+          <p data-i18n="tagline">Finanza · Automazione dei Processi · IA Applicata</p>
           <span></span>
         </div>
 
-        <p class="profile-copy">
-          Finance and accounting professional with an international perspective and a strong interest
-          in how technology transforms business.
+        <p class="profile-copy" data-i18n="profileCopy">
+          Professionista in finanza e contabilità con una prospettiva internazionale e un forte
+          interesse per come la tecnologia trasforma il business.
         </p>
 
         <div class="social-row" aria-label="Social links">
@@ -54,35 +55,35 @@
           download="Paulina-Rodriguez-Pina-CV.pdf"
         >
           <i data-lucide="download"></i>
-          <span>Download CV</span>
+          <span data-i18n="downloadCv">Scarica CV</span>
         </a>
 
         <div class="profile-facts">
           <article>
             <span class="icon-frame"><i data-lucide="map-pin"></i></span>
             <div>
-              <strong>Based in Rome</strong>
-              <span>Open to international opportunities</span>
+              <strong data-i18n="basedTitle">Con sede a Roma</strong>
+              <span data-i18n="basedDesc">Aperta a opportunità internazionali</span>
             </div>
           </article>
           <article>
             <span class="icon-frame"><i data-lucide="globe-2"></i></span>
             <div>
-              <strong>Languages</strong>
-              <span>Spanish · English · Italian</span>
+              <strong data-i18n="languagesTitle">Lingue</strong>
+              <span data-i18n="languagesDesc">Spagnolo · Inglese · Italiano</span>
             </div>
           </article>
           <article>
             <span class="icon-frame"><i data-lucide="circle-dot"></i></span>
             <div>
-              <strong>Current focus</strong>
-              <span>Digital transformation · Applied AI · Process innovation</span>
+              <strong data-i18n="currentFocusTitle">Focus attuale</strong>
+              <span data-i18n="currentFocusDesc">Trasformazione digitale · IA applicata · Innovazione dei processi</span>
             </div>
           </article>
         </div>
 
         <section class="sidebar-tools" id="technology">
-          <h2>Tools &amp; Technologies</h2>
+          <h2 data-i18n="toolsTitle">Strumenti e Tecnologie</h2>
           <div class="tool-grid">
             <span>Python</span><span>R</span><span>SQL</span>
             <span>Power BI</span><span>Excel</span><span>SAP</span>
@@ -94,25 +95,25 @@
         <div class="sidebar-flow" aria-hidden="true"></div>
       </aside>
 
-      <nav class="main-nav" aria-label="Main navigation">
+      <nav class="main-nav" aria-label="Main navigation" data-i18n-aria="ariaMainNav">
         <div class="nav-links" id="nav-links">
-          <a class="active" href="#overview"><i data-lucide="home"></i>Overview</a>
-          <a href="#work"><i data-lucide="folder-kanban"></i>Selected Work</a>
-          <a href="#presentations"><i data-lucide="presentation"></i>Presentations</a>
-          <a href="#resume-cv"><i data-lucide="badge"></i>Resume</a>
+          <a class="active" href="#overview"><i data-lucide="home"></i><span data-i18n="navOverview">Panoramica</span></a>
+          <a href="#work"><i data-lucide="folder-kanban"></i><span data-i18n="navWork">Progetti Selezionati</span></a>
+          <a href="#presentations"><i data-lucide="presentation"></i><span data-i18n="navPresentations">Presentazioni</span></a>
+          <a href="#resume-cv"><i data-lucide="badge"></i><span data-i18n="navResume">Curriculum</span></a>
         </div>
 
         <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
           <i data-lucide="menu"></i>
         </button>
 
-        <div class="top-actions" aria-label="External links">
+        <div class="top-actions" aria-label="External links" data-i18n-aria="ariaExternalLinks">
           <a href="https://github.com/paulinarodp" target="_blank" rel="noreferrer" aria-label="GitHub">
             <span class="brand-mark">GH</span>
           </a>
           <a href="#profile-highlights" aria-label="LinkedIn"><span class="brand-mark">in</span></a>
           <a href="mailto:paulinarodp20@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
-          <button class="theme-toggle" aria-label="Change visual intensity"><i data-lucide="moon"></i></button>
+          <button class="theme-toggle" aria-label="Change visual intensity" data-i18n-aria="ariaThemeToggle"><i data-lucide="moon"></i></button>
         </div>
       </nav>
 
@@ -120,10 +121,10 @@
 
         <section id="overview" class="hero-panel">
           <div class="hero-copy">
-            <h2>Turning complex business processes into <em>clarity.</em></h2>
-            <p>
-              I analyze complex workflows and use finance, automation and applied AI to design
-              clearer processes and support better decisions.
+            <h2 data-i18n="heroTitle">Trasformare processi aziendali complessi in <em>chiarezza.</em></h2>
+            <p data-i18n="heroDesc">
+              Analizzo flussi di lavoro complessi e utilizzo finanza, automazione e IA applicata
+              per progettare processi più chiari e supportare decisioni migliori.
             </p>
           </div>
           <div class="data-stream" aria-hidden="true">
@@ -134,7 +135,7 @@
         <section id="work" class="work-section">
           <div class="section-title">
             <i data-lucide="folder"></i>
-            <h2>Selected Work</h2>
+            <h2 data-i18n="sectionWork">Progetti Selezionati</h2>
           </div>
 
           <div class="work-grid">
@@ -143,29 +144,30 @@
                 <img src="./assets/factorymind.png?v=20260729-cube" alt="FactoryMind CocoaRisk interface preview" />
               </div>
               <div class="card-content">
-                <span class="project-kicker">Featured Project</span>
+                <span class="project-kicker" data-i18n="featuredKicker">Progetto in Evidenza</span>
                 <h3>FactoryMind / CocoaRisk</h3>
-                <p class="subtitle">Enterprise AI · Decision Intelligence</p>
-                <p class="project-result">1st place · Accenture Challenge · LUISS Business School</p>
-                <p class="description">
-                  A governed multi-agent decision system that connects operational, financial, market
-                  and supply-chain signals into a unified Enterprise Value at Risk (EVaR) measure —
-                  enabling smarter decisions, stronger controls and enterprise value protection.
+                <p class="subtitle" data-i18n="fmSubtitle">IA Aziendale · Decision Intelligence</p>
+                <p class="project-result" data-i18n="fmResult">1° posto · Accenture Challenge · LUISS Business School</p>
+                <p class="description" data-i18n="fmDesc">
+                  Un sistema decisionale multi-agente governato che collega segnali operativi,
+                  finanziari, di mercato e di supply-chain in un'unica misura di Enterprise Value at
+                  Risk (EVaR) — abilitando decisioni più intelligenti, controlli più solidi e la
+                  protezione del valore aziendale.
                 </p>
                 <div class="tag-row">
-                  <span>Decision Intelligence</span>
-                  <span>Risk Modeling</span>
-                  <span>AI Governance</span>
+                  <span data-i18n="fmTag1">Decision Intelligence</span>
+                  <span data-i18n="fmTag2">Modellazione del Rischio</span>
+                  <span data-i18n="fmTag3">Governance dell'IA</span>
                 </div>
                 <div class="card-actions">
                   <a href="https://factorymind-artifact.vercel.app" target="_blank" rel="noreferrer">
-                    Live Demo <i data-lucide="arrow-up-right"></i>
+                    <span data-i18n="btnLiveDemo">Live Demo</span> <i data-lucide="arrow-up-right"></i>
                   </a>
                   <a href="./assets/factorymind-presentation.pdf" target="_blank" rel="noreferrer">
-                    <i data-lucide="presentation"></i> Presentation
+                    <i data-lucide="presentation"></i> <span data-i18n="btnPresentation">Presentazione</span>
                   </a>
                   <a href="https://github.com/paulinarodp/FactoryMind-artifact" target="_blank" rel="noreferrer">
-                    <i data-lucide="code-2"></i> GitHub Repo
+                    <i data-lucide="code-2"></i> <span data-i18n="btnGithubRepo">GitHub Repo</span>
                   </a>
                 </div>
               </div>
@@ -177,16 +179,16 @@
               </div>
               <div class="card-content">
                 <h3>Forma AI</h3>
-                <p class="subtitle">AI Product · Design Communication</p>
-                <p class="description">
-                  An AI platform for architects to transform sketches, plans and site photos into
-                  visual directions and client-ready proposal assets.
+                <p class="subtitle" data-i18n="faSubtitle">Prodotto IA · Comunicazione di Design</p>
+                <p class="description" data-i18n="faDesc">
+                  Una piattaforma IA per architetti che trasforma schizzi, planimetrie e foto del
+                  sito in direzioni visive e materiali di proposta pronti per il cliente.
                 </p>
-                <div class="tag-row"><span>AI Product</span><span>Workflow Design</span><span>Go-to-Market</span></div>
+                <div class="tag-row"><span data-i18n="faTag1">Prodotto IA</span><span data-i18n="faTag2">Progettazione di Workflow</span><span data-i18n="faTag3">Go-to-Market</span></div>
                 <div class="card-actions">
-                  <a href="https://forma-ai-local.vercel.app" target="_blank" rel="noreferrer">Live Demo <i data-lucide="arrow-up-right"></i></a>
-                  <a href="./assets/forma-ai-final-presentation.pdf" target="_blank" rel="noreferrer"><i data-lucide="presentation"></i> Presentation</a>
-                  <a href="https://github.com/paulinarodp/Forma-AI" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> GitHub Repo</a>
+                  <a href="https://forma-ai-local.vercel.app" target="_blank" rel="noreferrer"><span data-i18n="btnLiveDemo">Live Demo</span> <i data-lucide="arrow-up-right"></i></a>
+                  <a href="./assets/forma-ai-final-presentation.pdf" target="_blank" rel="noreferrer"><i data-lucide="presentation"></i> <span data-i18n="btnPresentation">Presentazione</span></a>
+                  <a href="https://github.com/paulinarodp/Forma-AI" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> <span data-i18n="btnGithubRepo">GitHub Repo</span></a>
                 </div>
               </div>
             </article>
@@ -197,16 +199,16 @@
               </div>
               <div class="card-content">
                 <h3>EcoProfit AI</h3>
-                <p class="subtitle">Sustainability Intelligence · ROI</p>
-                <p class="description">
-                  AI prototype that analyzes documents, estimates emissions, identifies
-                  inefficiencies and translates opportunities into financial impact.
+                <p class="subtitle" data-i18n="epSubtitle">Intelligenza per la Sostenibilità · ROI</p>
+                <p class="description" data-i18n="epDesc">
+                  Prototipo IA che analizza documenti, stima le emissioni, identifica
+                  inefficienze e traduce le opportunità in impatto finanziario.
                 </p>
-                <div class="tag-row"><span>Sustainability</span><span>ROI</span><span>ESG Analytics</span></div>
+                <div class="tag-row"><span data-i18n="epTag1">Sostenibilità</span><span data-i18n="epTag2">ROI</span><span data-i18n="epTag3">Analisi ESG</span></div>
                 <div class="card-actions">
-                  <a href="https://ecoprofit-ai.vercel.app" target="_blank" rel="noreferrer">Live Demo <i data-lucide="arrow-up-right"></i></a>
-                  <a href="./assets/ecoprofit-presentation.pdf" target="_blank" rel="noreferrer"><i data-lucide="presentation"></i> Presentation</a>
-                  <a href="https://github.com/paulinarodp/Ecoprofit-AI" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> GitHub Repo</a>
+                  <a href="https://ecoprofit-ai.vercel.app" target="_blank" rel="noreferrer"><span data-i18n="btnLiveDemo">Live Demo</span> <i data-lucide="arrow-up-right"></i></a>
+                  <a href="./assets/ecoprofit-presentation.pdf" target="_blank" rel="noreferrer"><i data-lucide="presentation"></i> <span data-i18n="btnPresentation">Presentazione</span></a>
+                  <a href="https://github.com/paulinarodp/Ecoprofit-AI" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> <span data-i18n="btnGithubRepo">GitHub Repo</span></a>
                 </div>
               </div>
             </article>
@@ -217,18 +219,18 @@
               </div>
               <div class="card-content">
                 <h3>GenBot HR Assistant</h3>
-                <p class="subtitle">Conversational AI · Employee Experience</p>
-                <p class="description">
-                  AI-powered HR assistant that helps employees find answers about policies,
-                  benefits, leave, payroll and internal processes.
+                <p class="subtitle" data-i18n="gbSubtitle">IA Conversazionale · Esperienza dei Dipendenti</p>
+                <p class="description" data-i18n="gbDesc">
+                  Assistente HR basato su IA che aiuta i dipendenti a trovare risposte su
+                  policy, benefit, ferie, buste paga e processi interni.
                 </p>
-                <div class="tag-row"><span>HR Tech</span><span>Chatbot</span><span>Knowledge Access</span></div>
+                <div class="tag-row"><span data-i18n="gbTag1">HR Tech</span><span data-i18n="gbTag2">Chatbot</span><span data-i18n="gbTag3">Accesso alla Conoscenza</span></div>
                 <div class="card-actions presentation-card-actions">
                   <a href="./assets/genbot-final-presentation.pdf" target="_blank" rel="noreferrer">
-                    <i data-lucide="presentation"></i> Presentation
+                    <i data-lucide="presentation"></i> <span data-i18n="btnPresentation">Presentazione</span>
                   </a>
                 </div>
-                <p class="private-note"><i data-lucide="lock-keyhole"></i> Private project archive</p>
+                <p class="private-note"><i data-lucide="lock-keyhole"></i> <span data-i18n="privateArchive">Archivio progetto privato</span></p>
               </div>
             </article>
 
@@ -238,16 +240,16 @@
               </div>
               <div class="card-content">
                 <h3>LifeGraph AI</h3>
-                <p class="subtitle">Customer Intelligence · Personalization</p>
-                <p class="description">
-                  An AI-driven customer intelligence platform that uses life-event signals to
-                  deliver relevant recommendations and engagement.
+                <p class="subtitle" data-i18n="lgSubtitle">Customer Intelligence · Personalizzazione</p>
+                <p class="description" data-i18n="lgDesc">
+                  Piattaforma di customer intelligence basata su IA che utilizza segnali legati
+                  agli eventi di vita per offrire raccomandazioni e coinvolgimento rilevanti.
                 </p>
-                <div class="tag-row"><span>Customer Intelligence</span><span>Personalization</span><span>Responsible AI</span></div>
+                <div class="tag-row"><span data-i18n="lgTag1">Customer Intelligence</span><span data-i18n="lgTag2">Personalizzazione</span><span data-i18n="lgTag3">IA Responsabile</span></div>
                 <div class="card-actions">
-                  <a href="https://lifegraph-poste-demo.vercel.app" target="_blank" rel="noreferrer">Live Demo <i data-lucide="arrow-up-right"></i></a>
-                  <a href="./assets/posteitaliane-hackathon-presentation.pdf" target="_blank" rel="noreferrer"><i data-lucide="presentation"></i> Presentation</a>
-                  <a href="https://github.com/paulinarodp/LifeGraph-AI" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> GitHub Repo</a>
+                  <a href="https://lifegraph-poste-demo.vercel.app" target="_blank" rel="noreferrer"><span data-i18n="btnLiveDemo">Live Demo</span> <i data-lucide="arrow-up-right"></i></a>
+                  <a href="./assets/posteitaliane-hackathon-presentation.pdf" target="_blank" rel="noreferrer"><i data-lucide="presentation"></i> <span data-i18n="btnPresentation">Presentazione</span></a>
+                  <a href="https://github.com/paulinarodp/LifeGraph-AI" target="_blank" rel="noreferrer"><i data-lucide="code-2"></i> <span data-i18n="btnGithubRepo">GitHub Repo</span></a>
                 </div>
               </div>
             </article>
@@ -257,43 +259,43 @@
         <section id="presentations" class="presentation-section">
           <div class="section-title">
             <i data-lucide="presentation"></i>
-            <h2>Presentations</h2>
+            <h2 data-i18n="sectionPresentations">Presentazioni</h2>
           </div>
 
           <div class="presentation-grid">
             <article class="presentation-card">
               <span class="presentation-icon"><i data-lucide="wheat"></i></span>
               <div>
-                <p class="presentation-kicker">Client Presentation</p>
+                <p class="presentation-kicker" data-i18n="pc1Kicker">Presentazione per Cliente</p>
                 <h3>GrainCraft Foods</h3>
-                <p>Client-facing presentation for a food-sector project, separated from the main portfolio projects.</p>
+                <p data-i18n="pc1Desc">Presentazione rivolta al cliente per un progetto nel settore alimentare, separata dai principali progetti del portfolio.</p>
               </div>
               <a href="./assets/graincraft-foods-client-presentation.pdf" target="_blank" rel="noreferrer">
-                Open presentation <i data-lucide="arrow-up-right"></i>
+                <span data-i18n="openPresentation">Apri presentazione</span> <i data-lucide="arrow-up-right"></i>
               </a>
             </article>
 
             <article class="presentation-card">
               <span class="presentation-icon"><i data-lucide="flask-conical"></i></span>
               <div>
-                <p class="presentation-kicker">Business Case</p>
+                <p class="presentation-kicker" data-i18n="pc2Kicker">Business Case</p>
                 <h3>Philogen - Make it a Case</h3>
-                <p>Case presentation focused on strategic analysis, business framing and recommendation design.</p>
+                <p data-i18n="pc2Desc">Presentazione di un caso incentrata su analisi strategica, inquadramento del business e progettazione di raccomandazioni.</p>
               </div>
               <a href="./assets/philogen-make-it-a-case.pdf" target="_blank" rel="noreferrer">
-                Open presentation <i data-lucide="arrow-up-right"></i>
+                <span data-i18n="openPresentation">Apri presentazione</span> <i data-lucide="arrow-up-right"></i>
               </a>
             </article>
 
             <article class="presentation-card">
               <span class="presentation-icon"><i data-lucide="sparkles"></i></span>
               <div>
-                <p class="presentation-kicker">Strategy Presentation</p>
+                <p class="presentation-kicker" data-i18n="pc3Kicker">Presentazione Strategica</p>
                 <h3>Disney</h3>
-                <p>Presentation work centered on brand, customer experience and strategic storytelling.</p>
+                <p data-i18n="pc3Desc">Lavoro di presentazione incentrato su brand, esperienza del cliente e storytelling strategico.</p>
               </div>
               <a href="./assets/disney-presentation.pdf" target="_blank" rel="noreferrer">
-                Open presentation <i data-lucide="arrow-up-right"></i>
+                <span data-i18n="openPresentation">Apri presentazione</span> <i data-lucide="arrow-up-right"></i>
               </a>
             </article>
           </div>
@@ -302,36 +304,36 @@
         <section id="experience" class="focus-section">
           <div class="section-title">
             <i data-lucide="target"></i>
-            <h2>Core Skills &amp; Focus</h2>
+            <h2 data-i18n="sectionFocus">Competenze Chiave e Focus</h2>
           </div>
 
           <div class="focus-grid">
             <article>
               <i data-lucide="pie-chart"></i>
               <div>
-                <h3>Finance &amp; Business Understanding</h3>
-                <p>Financial analysis, accounting operations and strategic business insight.</p>
+                <h3 data-i18n="skill1Title">Finanza e Comprensione del Business</h3>
+                <p data-i18n="skill1Desc">Analisi finanziaria, operazioni contabili e visione strategica del business.</p>
               </div>
             </article>
             <article>
               <i data-lucide="workflow"></i>
               <div>
-                <h3>Process Transformation</h3>
-                <p>Process mapping, redesign and automation to drive efficiency and quality.</p>
+                <h3 data-i18n="skill2Title">Trasformazione dei Processi</h3>
+                <p data-i18n="skill2Desc">Mappatura, riprogettazione e automazione dei processi per migliorare efficienza e qualità.</p>
               </div>
             </article>
             <article>
               <i data-lucide="brain-circuit"></i>
               <div>
-                <h3>Applied AI &amp; Data</h3>
-                <p>AI tools, data analysis and modeling for intelligent decision support.</p>
+                <h3 data-i18n="skill3Title">IA Applicata e Dati</h3>
+                <p data-i18n="skill3Desc">Strumenti di IA, analisi dei dati e modellazione per un supporto decisionale intelligente.</p>
               </div>
             </article>
             <article>
               <i data-lucide="users-round"></i>
               <div>
-                <h3>Project Coordination</h3>
-                <p>Cross-functional collaboration, stakeholder alignment and project delivery.</p>
+                <h3 data-i18n="skill4Title">Coordinamento di Progetti</h3>
+                <p data-i18n="skill4Desc">Collaborazione cross-funzionale, allineamento con gli stakeholder e consegna dei progetti.</p>
               </div>
             </article>
           </div>
@@ -340,8 +342,8 @@
         <section id="resume-cv" class="resume-section" hidden>
           <div class="section-title resume-title">
             <i data-lucide="file-text"></i>
-            <h2>Resume</h2>
-            <button class="resume-close" type="button" aria-label="Close resume viewer">
+            <h2 data-i18n="sectionResume">Curriculum</h2>
+            <button class="resume-close" type="button" aria-label="Close resume viewer" data-i18n-aria="ariaResumeClose">
               <i data-lucide="x"></i>
             </button>
           </div>
@@ -355,54 +357,59 @@
 
           <div class="resume-actions">
             <a href="./assets/paulina-rodriguez-pina-cv.pdf" target="_blank" rel="noreferrer">
-              View CV <i data-lucide="arrow-up-right"></i>
+              <span data-i18n="viewCv">Visualizza CV</span> <i data-lucide="arrow-up-right"></i>
             </a>
             <a
               href="./assets/paulina-rodriguez-pina-cv.pdf"
               download="Paulina-Rodriguez-Pina-CV.pdf"
             >
-              Download CV <i data-lucide="download"></i>
+              <span data-i18n="downloadCv">Scarica CV</span> <i data-lucide="download"></i>
             </a>
           </div>
         </section>
       </main>
 
-      <aside class="right-column" aria-label="Profile details">
+      <aside class="right-column" aria-label="Profile details" data-i18n-aria="ariaProfileDetails">
         <section class="side-panel" id="profile-highlights">
-          <h2><i data-lucide="star"></i>Profile Highlights</h2>
+          <h2><i data-lucide="star"></i><span data-i18n="highlightsTitle">Punti di Forza del Profilo</span></h2>
           <div class="highlight-group">
-            <h3><i data-lucide="user-round"></i>Experience</h3>
+            <h3><i data-lucide="user-round"></i><span data-i18n="expTitle">Esperienza</span></h3>
             <ul>
-              <li>2+ years in finance and accounting operations</li>
-              <li>Experience in process redesign and automation</li>
+              <li data-i18n="expItem1">2+ anni di esperienza in operazioni di finanza e contabilità</li>
+              <li data-i18n="expItem2">Esperienza nella riprogettazione e automazione dei processi</li>
             </ul>
           </div>
           <div class="highlight-group">
-            <h3><i data-lucide="graduation-cap"></i>Education</h3>
+            <h3><i data-lucide="graduation-cap"></i><span data-i18n="eduTitle">Formazione</span></h3>
             <ul>
-              <li>Master in Digital Transformation at LUISS</li>
-              <li>B.A. in Accounting &amp; Finance, Tecnológico de Monterrey</li>
+              <li data-i18n="eduItem1">Master in Trasformazione Digitale presso LUISS</li>
+              <li data-i18n="eduItem2">Laurea in Contabilità e Finanza, Tecnológico de Monterrey</li>
             </ul>
           </div>
           <div class="highlight-group">
-            <h3><i data-lucide="trophy"></i>Recognition</h3>
+            <h3><i data-lucide="trophy"></i><span data-i18n="recogTitle">Riconoscimenti</span></h3>
             <ul>
-              <li>CENEVAL National Award — Top 1%</li>
+              <li data-i18n="recogItem1">Premio Nazionale CENEVAL — Top 1%</li>
             </ul>
           </div>
           <div class="highlight-group">
-            <h3><i data-lucide="zap"></i>Strengths</h3>
+            <h3><i data-lucide="zap"></i><span data-i18n="strengthsTitle">Punti di Forza</span></h3>
             <ul>
-              <li>Business understanding meets technology</li>
-              <li>Data-driven decision support</li>
-              <li>Process excellence &amp; innovation</li>
-              <li>Project coordination &amp; cross-functional collaboration</li>
+              <li data-i18n="strengthItem1">La comprensione del business incontra la tecnologia</li>
+              <li data-i18n="strengthItem2">Supporto decisionale basato sui dati</li>
+              <li data-i18n="strengthItem3">Eccellenza e innovazione nei processi</li>
+              <li data-i18n="strengthItem4">Coordinamento di progetti e collaborazione cross-funzionale</li>
             </ul>
           </div>
         </section>
       </aside>
     </div>
 
-    <script src="./script.js"></script>
+    <div class="lang-toggle" role="group" aria-label="Language selector">
+      <button type="button" class="lang-option" data-lang="it" aria-pressed="true">IT</button>
+      <button type="button" class="lang-option" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+
+    <script src="./script.js?v=20260806-lang-toggle"></script>
   </body>
 </html>
